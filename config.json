@@ -1,0 +1,7 @@
+{
+    "port": "COM10",
+    "baudrate": 9600,
+    "target_app_title": "Shop-Flow System From Vietnam(Pack)",
+    "textbox_auto_id": "GIFTBOX_AUTO",
+    "backend": "win32"
+}
