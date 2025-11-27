@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, scrolledtext, messagebox
+from tkinter import ttk, scrolledtext, messagebox, filedialog
 import threading
 import logging
 from datetime import datetime, timedelta
@@ -12,26 +12,81 @@ from PIL import Image, ImageDraw
 import time
 import urllib.request
 import subprocess
+from ftplib import FTP
 
-PROGRAM_DIRECTORY = "C:\\Serial_to_MES"
-UPDATE_SCRIPT_EXECUTABLE = os.path.join(PROGRAM_DIRECTORY, "update_script.exe")
+# Default settings - will be loaded from settings.json
+class AppSettings:
+    def __init__(self):
+        # Update Settings
+        self.program_directory = "C:\\Serial_to_MES"
+        self.ftp_server = "10.62.102.5"
+        self.ftp_user = "update"
+        self.ftp_password = "update"
+        self.ftp_directory = "KhanhDQ/Update_Program/Serial_to_MES/"
+        
+        # Monitoring Settings
+        self.max_log_lines = 50
+        self.idle_timeout_minutes = 30
+        self.max_consecutive_errors = 10
+        self.connection_grace_period = 5
+        self.max_disconnect_tolerance = 20
+        
+    def to_dict(self):
+        return {
+            'program_directory': self.program_directory,
+            'ftp_server': self.ftp_server,
+            'ftp_user': self.ftp_user,
+            'ftp_password': self.ftp_password,
+            'ftp_directory': self.ftp_directory,
+            'max_log_lines': self.max_log_lines,
+            'idle_timeout_minutes': self.idle_timeout_minutes,
+            'max_consecutive_errors': self.max_consecutive_errors,
+            'connection_grace_period': self.connection_grace_period,
+            'max_disconnect_tolerance': self.max_disconnect_tolerance
+        }
+    
+    def from_dict(self, data):
+        self.program_directory = data.get('program_directory', self.program_directory)
+        self.ftp_server = data.get('ftp_server', self.ftp_server)
+        self.ftp_user = data.get('ftp_user', self.ftp_user)
+        self.ftp_password = data.get('ftp_password', self.ftp_password)
+        self.ftp_directory = data.get('ftp_directory', self.ftp_directory)
+        self.max_log_lines = data.get('max_log_lines', self.max_log_lines)
+        self.idle_timeout_minutes = data.get('idle_timeout_minutes', self.idle_timeout_minutes)
+        self.max_consecutive_errors = data.get('max_consecutive_errors', self.max_consecutive_errors)
+        self.connection_grace_period = data.get('connection_grace_period', self.connection_grace_period)
+        self.max_disconnect_tolerance = data.get('max_disconnect_tolerance', self.max_disconnect_tolerance)
 
-#FTP Server
-FTP_BASE_URL = "ftp://update:update@10.62.102.5/KhanhDQ/Update_Program/Serial_to_MES/"
-VERSION_URL = FTP_BASE_URL + "version.txt"
+# Global settings instance
+app_settings = AppSettings()
 
+# Helper functions using global settings
+def get_program_directory():
+    return app_settings.program_directory
 
-CURRENT_VERSION_FILE = "C:\\Serial_to_MES\\version.txt"
+def get_update_script_executable():
+    return os.path.join(app_settings.program_directory, "update_script.exe")
+
+def get_ftp_base_url():
+    return f"ftp://{app_settings.ftp_user}:{app_settings.ftp_password}@{app_settings.ftp_server}/{app_settings.ftp_directory}"
+
+def get_version_url():
+    return get_ftp_base_url() + "version.txt"
+
+def get_current_version_file():
+    return os.path.join(app_settings.program_directory, "version.txt")
 
 def get_current_version():
-    if os.path.exists(CURRENT_VERSION_FILE):
-        with open(CURRENT_VERSION_FILE, "r") as file:
+    current_version_file = get_current_version_file()
+    if os.path.exists(current_version_file):
+        with open(current_version_file, "r") as file:
             return file.read().strip()
     return "0.0.0"
 
 def get_latest_version():
     try:
-        with urllib.request.urlopen(VERSION_URL) as response:
+        version_url = get_version_url()
+        with urllib.request.urlopen(version_url) as response:
             latest_version = response.read().decode('utf-8').strip()
         return latest_version
     except Exception as e:
@@ -47,8 +102,9 @@ def check_for_updates():
 
 def initiate_update():
     print("Đang chuẩn bị cập nhật và khởi động lại chương trình...")
-    process = subprocess.Popen([UPDATE_SCRIPT_EXECUTABLE])
-    print(f"Đã khởi chạy {UPDATE_SCRIPT_EXECUTABLE}, PID: {process.pid}")
+    update_script = get_update_script_executable()
+    process = subprocess.Popen([update_script])
+    print(f"Đã khởi chạy {update_script}, PID: {process.pid}")
     sys.exit()
 
 
@@ -60,6 +116,9 @@ class SerialToWinFormsGUI:
         self.root.geometry("800x600")
         self.root.resizable(True, True)
         
+        # Load settings first
+        self.load_settings()
+        
         # Serial handler
         self.serial_handler = None
         self.running = False
@@ -67,6 +126,9 @@ class SerialToWinFormsGUI:
         # System tray
         self.tray_icon = None
         self.is_hidden = False
+        
+        # Setup menu bar
+        self.setup_menu()
         
         # Setup GUI
         self.setup_ui()
@@ -79,6 +141,45 @@ class SerialToWinFormsGUI:
         
         # Handle window close
         self.root.protocol("WM_DELETE_WINDOW", self.hide_to_tray)
+    
+    def load_settings(self):
+        """Load application settings from settings.json"""
+        try:
+            settings_path = os.path.join(os.path.dirname(__file__), 'settings.json')
+            if os.path.exists(settings_path):
+                with open(settings_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    app_settings.from_dict(data)
+        except Exception as e:
+            print(f"Failed to load settings: {e}, using defaults")
+    
+    def save_settings(self):
+        """Save application settings to settings.json"""
+        try:
+            settings_path = os.path.join(os.path.dirname(__file__), 'settings.json')
+            with open(settings_path, 'w', encoding='utf-8') as f:
+                json.dump(app_settings.to_dict(), f, indent=4, ensure_ascii=False)
+            return True
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to save settings: {e}")
+            return False
+    
+    def setup_menu(self):
+        """Setup menu bar"""
+        menubar = tk.Menu(self.root)
+        self.root.config(menu=menubar)
+        
+        # File menu
+        file_menu = tk.Menu(menubar, tearoff=0)
+        menubar.add_cascade(label="File", menu=file_menu)
+        file_menu.add_command(label="Settings", command=self.open_settings_dialog)
+        file_menu.add_separator()
+        file_menu.add_command(label="Exit", command=self.quit_app)
+        
+        # Help menu
+        help_menu = tk.Menu(menubar, tearoff=0)
+        menubar.add_cascade(label="Help", menu=help_menu)
+        help_menu.add_command(label="About", command=self.show_about)
         
     def setup_ui(self):
         # Main container
@@ -215,15 +316,17 @@ class SerialToWinFormsGUI:
         # Auto-stop tracking
         self.last_data_time = None
         self.consecutive_errors = 0
-        self.max_log_lines = 50  # Maximum lines in activity log
-        self.idle_timeout_minutes = 30  # Auto-stop if no data for 30 minutes
-        self.max_consecutive_errors = 10  # Auto-stop if more than 10 consecutive errors
-        self.connection_grace_period = 5  # Don't auto-stop in first 5 seconds after start
+        
+        # Apply settings to instance variables
+        self.max_log_lines = app_settings.max_log_lines
+        self.idle_timeout_minutes = app_settings.idle_timeout_minutes
+        self.max_consecutive_errors = app_settings.max_consecutive_errors
+        self.connection_grace_period = app_settings.connection_grace_period
         
         # Connection loss tracking
         self.serial_disconnect_count = 0
         self.winforms_disconnect_count = 0
-        self.max_disconnect_tolerance = 20  # Allow 20 consecutive disconnect detections before stopping
+        self.max_disconnect_tolerance = app_settings.max_disconnect_tolerance
         
     def load_config(self):
         """Load configuration from config.json"""
@@ -645,6 +748,543 @@ class SerialToWinFormsGUI:
     def on_closing(self):
         """Handle window closing - minimize to tray instead of quit"""
         self.hide_to_tray()
+    
+    def show_about(self):
+        """Show about dialog"""
+        AboutDialog(self.root)
+    
+    def open_settings_dialog(self):
+        """Open settings dialog"""
+        dialog = SettingsDialog(self.root, self)
+        self.root.wait_window(dialog.top)
+
+
+class AboutDialog:
+    """Beautiful About Dialog"""
+    def __init__(self, parent):
+        self.top = tk.Toplevel(parent)
+        self.top.title("About")
+        self.top.geometry("450x350")
+        self.top.resizable(False, False)
+        self.top.transient(parent)
+        self.top.grab_set()
+        
+        # Center the dialog
+        self.top.update_idletasks()
+        x = (self.top.winfo_screenwidth() // 2) - (450 // 2)
+        y = (self.top.winfo_screenheight() // 2) - (350 // 2)
+        self.top.geometry(f"450x350+{x}+{y}")
+        
+        self.setup_ui()
+    
+    def setup_ui(self):
+        # Main frame with gradient-like background
+        main_frame = tk.Frame(self.top, bg="#f0f0f0")
+        main_frame.pack(fill=tk.BOTH, expand=True)
+        
+        # Header frame (dark blue)
+        header_frame = tk.Frame(main_frame, bg="#1e3a8a", height=120)
+        header_frame.pack(fill=tk.X)
+        header_frame.pack_propagate(False)
+        
+        # App icon (using text as icon)
+        icon_label = tk.Label(header_frame, text="⚡", font=('Arial', 48), 
+                             bg="#1e3a8a", fg="white")
+        icon_label.pack(pady=10)
+        
+        # App name
+        name_label = tk.Label(header_frame, text="Serial To WinForms", 
+                             font=('Arial', 16, 'bold'), bg="#1e3a8a", fg="white")
+        name_label.pack()
+        
+        # Content frame
+        content_frame = tk.Frame(main_frame, bg="white", padx=30, pady=20)
+        content_frame.pack(fill=tk.BOTH, expand=True)
+        
+        # Version
+        version = get_current_version()
+        version_label = tk.Label(content_frame, text=f"Version {version}", 
+                                font=('Arial', 11, 'bold'), bg="white", fg="#1e3a8a")
+        version_label.pack(pady=(0, 15))
+        
+        # Description
+        desc_label = tk.Label(content_frame, 
+                             text="Connects serial port data to\nWinForms application automatically", 
+                             font=('Arial', 10), bg="white", fg="#666666", justify=tk.CENTER)
+        desc_label.pack(pady=(0, 20))
+        
+        # Separator
+        separator = ttk.Separator(content_frame, orient='horizontal')
+        separator.pack(fill=tk.X, pady=10)
+        
+        # Developer info
+        dev_frame = tk.Frame(content_frame, bg="white")
+        dev_frame.pack(pady=10)
+        
+        tk.Label(dev_frame, text="👨‍💻 Developed by:", font=('Arial', 9), 
+                bg="white", fg="#666666").pack()
+        tk.Label(dev_frame, text="KhanhIT - IT Team", font=('Arial', 10, 'bold'), 
+                bg="white", fg="#1e3a8a").pack()
+        
+        # Copyright
+        copyright_label = tk.Label(content_frame, 
+                                   text="ITM Semiconductor © 2025\nAll rights reserved", 
+                                   font=('Arial', 8), bg="white", fg="#999999", justify=tk.CENTER)
+        copyright_label.pack(side=tk.BOTTOM, pady=(15, 0))
+        
+        # Close button
+        btn_frame = tk.Frame(content_frame, bg="white")
+        btn_frame.pack(side=tk.BOTTOM, pady=(10, 0))
+        
+        close_btn = tk.Button(btn_frame, text="Close", command=self.top.destroy,
+                             font=('Arial', 10), bg="#1e3a8a", fg="white",
+                             padx=30, pady=8, relief=tk.FLAT, cursor="hand2",
+                             activebackground="#2563eb", activeforeground="white")
+        close_btn.pack()
+        
+        # Hover effect
+        def on_enter(e):
+            close_btn['bg'] = '#2563eb'
+        
+        def on_leave(e):
+            close_btn['bg'] = '#1e3a8a'
+        
+        close_btn.bind("<Enter>", on_enter)
+        close_btn.bind("<Leave>", on_leave)
+
+
+class SettingsDialog:
+    def __init__(self, parent, app):
+        self.parent = parent
+        self.app = app
+        self.top = tk.Toplevel(parent)
+        self.top.title("⚙️ Settings")
+        self.top.geometry("550x700")
+        self.top.resizable(False, False)
+        
+        # Make dialog modal
+        self.top.transient(parent)
+        self.top.grab_set()
+        
+        # Center the dialog
+        self.top.update_idletasks()
+        x = (self.top.winfo_screenwidth() // 2) - (700 // 2)
+        y = (self.top.winfo_screenheight() // 2) - (580 // 2)
+        self.top.geometry(f"550x700+{x}+{y}")
+        
+        # Create temporary settings copy
+        self.temp_settings = AppSettings()
+        self.temp_settings.from_dict(app_settings.to_dict())
+        
+        self.setup_ui()
+        
+    def setup_ui(self):
+        # Header frame
+        header_frame = tk.Frame(self.top, bg="#1e3a8a", height=60)
+        header_frame.pack(fill=tk.X)
+        header_frame.pack_propagate(False)
+        
+        title_label = tk.Label(header_frame, text="⚙️ Application Settings", 
+                              font=('Arial', 14, 'bold'), bg="#1e3a8a", fg="white")
+        title_label.pack(pady=18)
+        
+        # Main content frame
+        content_frame = tk.Frame(self.top, bg="white")
+        content_frame.pack(fill=tk.BOTH, expand=True)
+        
+        # Create notebook (tabs) with custom style
+        style = ttk.Style()
+        style.theme_use('default')
+        style.configure('Custom.TNotebook', background='white', borderwidth=0)
+        style.configure('Custom.TNotebook.Tab', padding=[20, 10], font=('Arial', 10))
+        style.map('Custom.TNotebook.Tab', background=[('selected', '#1e3a8a')], 
+                 foreground=[('selected', 'white')])
+        
+        notebook = ttk.Notebook(content_frame, style='Custom.TNotebook')
+        notebook.pack(fill=tk.BOTH, expand=True, padx=15, pady=15)
+        
+        # Tab 1: Update Settings
+        update_frame = tk.Frame(notebook, bg="white", padx=20, pady=15)
+        notebook.add(update_frame, text="  📦 Update Settings  ")
+        self.setup_update_tab(update_frame)
+        
+        # Tab 2: Monitoring Settings
+        monitoring_frame = tk.Frame(notebook, bg="white", padx=20, pady=15)
+        notebook.add(monitoring_frame, text="  📊 Monitoring Settings  ")
+        self.setup_monitoring_tab(monitoring_frame)
+        
+        # Buttons frame at bottom
+        button_frame = tk.Frame(self.top, bg="#f0f0f0", pady=15)
+        button_frame.pack(fill=tk.X, side=tk.BOTTOM)
+        
+        btn_container = tk.Frame(button_frame, bg="#f0f0f0")
+        btn_container.pack()
+        
+        # Reset button (left)
+        reset_btn = tk.Button(btn_container, text="🔄 Reset to Default", 
+                             command=self.reset_to_default,
+                             font=('Arial', 10), bg="#dc2626", fg="white",
+                             padx=15, pady=8, relief=tk.FLAT, cursor="hand2",
+                             activebackground="#b91c1c", activeforeground="white")
+        reset_btn.pack(side=tk.LEFT, padx=5)
+        
+        # Cancel button
+        cancel_btn = tk.Button(btn_container, text="Cancel", 
+                              command=self.top.destroy,
+                              font=('Arial', 10), bg="#6b7280", fg="white",
+                              padx=25, pady=8, relief=tk.FLAT, cursor="hand2",
+                              activebackground="#4b5563", activeforeground="white")
+        cancel_btn.pack(side=tk.LEFT, padx=5)
+        
+        # Save button
+        save_btn = tk.Button(btn_container, text="💾 Save Settings", 
+                            command=self.save_settings,
+                            font=('Arial', 10, 'bold'), bg="#059669", fg="white",
+                            padx=25, pady=8, relief=tk.FLAT, cursor="hand2",
+                            activebackground="#047857", activeforeground="white")
+        save_btn.pack(side=tk.LEFT, padx=5)
+        
+        # Hover effects
+        for btn in [reset_btn, cancel_btn, save_btn]:
+            self.add_hover_effect(btn)
+    
+    def add_hover_effect(self, button):
+        """Add hover effect to button"""
+        original_bg = button['bg']
+        hover_bg = button['activebackground']
+        
+        def on_enter(e):
+            button['bg'] = hover_bg
+        
+        def on_leave(e):
+            button['bg'] = original_bg
+        
+        button.bind("<Enter>", on_enter)
+        button.bind("<Leave>", on_leave)
+    
+    def setup_update_tab(self, parent):
+        """Setup update settings tab"""
+        # Scrollable frame
+        canvas = tk.Canvas(parent, bg="white", highlightthickness=0)
+        scrollbar = ttk.Scrollbar(parent, orient="vertical", command=canvas.yview)
+        scrollable_frame = tk.Frame(canvas, bg="white")
+        
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+        
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+        
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+        
+        # Program Directory Section
+        section1 = tk.LabelFrame(scrollable_frame, text="  📁 Program Directory  ", 
+                                font=('Arial', 10, 'bold'), bg="white", fg="#1e3a8a",
+                                relief=tk.GROOVE, borderwidth=2)
+        section1.pack(fill=tk.X, padx=10, pady=(10, 15))
+        
+        inner1 = tk.Frame(section1, bg="white", padx=15, pady=10)
+        inner1.pack(fill=tk.BOTH)
+        
+        tk.Label(inner1, text="Installation Directory:", font=('Arial', 9), 
+                bg="white", fg="#374151").pack(anchor=tk.W, pady=(0, 5))
+        
+        dir_frame = tk.Frame(inner1, bg="white")
+        dir_frame.pack(fill=tk.X, pady=(0, 5))
+        
+        self.program_dir_var = tk.StringVar(value=self.temp_settings.program_directory)
+        dir_entry = tk.Entry(dir_frame, textvariable=self.program_dir_var, 
+                            font=('Arial', 10), relief=tk.SOLID, borderwidth=1)
+        dir_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, ipady=5)
+        
+        browse_btn = tk.Button(dir_frame, text="📂 Browse", command=self.browse_directory,
+                              font=('Arial', 9), bg="#3b82f6", fg="white",
+                              padx=12, pady=6, relief=tk.FLAT, cursor="hand2")
+        browse_btn.pack(side=tk.RIGHT, padx=(5, 0))
+        self.add_hover_effect(browse_btn)
+        
+        tk.Label(inner1, text="💡 Directory where program files are installed", 
+                font=('Arial', 8), bg="white", fg="#9ca3af").pack(anchor=tk.W)
+        
+        # FTP Server Section
+        section2 = tk.LabelFrame(scrollable_frame, text="  🌐 FTP Server Settings  ", 
+                                font=('Arial', 10, 'bold'), bg="white", fg="#1e3a8a",
+                                relief=tk.GROOVE, borderwidth=2)
+        section2.pack(fill=tk.X, padx=10, pady=(0, 15))
+        
+        inner2 = tk.Frame(section2, bg="white", padx=15, pady=10)
+        inner2.pack(fill=tk.BOTH)
+        
+        # FTP fields
+        ftp_fields = [
+            ("Server IP:", "ftp_server"),
+            ("Username:", "ftp_user"),
+            ("Password:", "ftp_password"),
+            ("Directory:", "ftp_directory")
+        ]
+        
+        for i, (label_text, var_name) in enumerate(ftp_fields):
+            tk.Label(inner2, text=label_text, font=('Arial', 9), 
+                    bg="white", fg="#374151").grid(row=i, column=0, sticky=tk.W, pady=8)
+            
+            var = tk.StringVar(value=getattr(self.temp_settings, var_name))
+            setattr(self, f"{var_name}_var", var)
+            
+            entry = tk.Entry(inner2, textvariable=var, font=('Arial', 10),
+                           relief=tk.SOLID, borderwidth=1, width=45)
+            if "password" in var_name:
+                entry.config(show="•")
+            entry.grid(row=i, column=1, sticky=(tk.W, tk.E), pady=8, padx=(10, 0), ipady=4)
+        
+        inner2.columnconfigure(1, weight=1)
+        
+        # Test FTP button
+        test_frame = tk.Frame(inner2, bg="white")
+        test_frame.grid(row=len(ftp_fields), column=0, columnspan=2, pady=(10, 5))
+        
+        test_btn = tk.Button(test_frame, text="🔌 Test FTP Connection", 
+                            command=self.test_ftp_connection,
+                            font=('Arial', 9), bg="#8b5cf6", fg="white",
+                            padx=15, pady=7, relief=tk.FLAT, cursor="hand2")
+        test_btn.pack()
+        self.add_hover_effect(test_btn)
+    
+    def setup_monitoring_tab(self, parent):
+        """Setup monitoring settings tab"""
+        # Scrollable frame
+        canvas = tk.Canvas(parent, bg="white", highlightthickness=0)
+        scrollbar = ttk.Scrollbar(parent, orient="vertical", command=canvas.yview)
+        scrollable_frame = tk.Frame(canvas, bg="white")
+        
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
+        )
+        
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+        
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
+        
+        # Settings Section
+        section = tk.LabelFrame(scrollable_frame, text="  ⚙️ Monitoring Parameters  ", 
+                               font=('Arial', 10, 'bold'), bg="white", fg="#1e3a8a",
+                               relief=tk.GROOVE, borderwidth=2)
+        section.pack(fill=tk.X, padx=10, pady=10)
+        
+        inner = tk.Frame(section, bg="white", padx=15, pady=15)
+        inner.pack(fill=tk.BOTH)
+        
+        settings = [
+            ("📝 Max Log Lines:", "max_log_lines", 10, 1000, 
+             "Maximum number of lines to keep in activity log"),
+            ("⏱️ Idle Timeout (minutes):", "idle_timeout", 1, 180, 
+             "Auto-stop if no data received for this duration"),
+            ("❌ Max Consecutive Errors:", "max_errors", 1, 100, 
+             "Auto-stop after this many consecutive errors"),
+            ("⏳ Connection Grace Period (sec):", "grace_period", 1, 60, 
+             "Wait time before checking for disconnections"),
+            ("🔌 Max Disconnect Tolerance:", "disconnect_tolerance", 1, 100, 
+             "Number of disconnect checks before auto-stop")
+        ]
+        
+        for i, (label_text, var_name, min_val, max_val, desc) in enumerate(settings):
+            # Label and value frame
+            row_frame = tk.Frame(inner, bg="white")
+            row_frame.grid(row=i*3, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(10, 5))
+            
+            tk.Label(row_frame, text=label_text, font=('Arial', 9, 'bold'), 
+                    bg="white", fg="#1f2937").pack(side=tk.LEFT)
+            
+            # Get the correct variable
+            if var_name == "max_log_lines":
+                var_value = self.temp_settings.max_log_lines
+            elif var_name == "idle_timeout":
+                var_value = self.temp_settings.idle_timeout_minutes
+            elif var_name == "max_errors":
+                var_value = self.temp_settings.max_consecutive_errors
+            elif var_name == "grace_period":
+                var_value = self.temp_settings.connection_grace_period
+            elif var_name == "disconnect_tolerance":
+                var_value = self.temp_settings.max_disconnect_tolerance
+            
+            var = tk.IntVar(value=var_value)
+            setattr(self, f"{var_name}_var", var)
+            
+            # Spinbox with better styling
+            spinbox_frame = tk.Frame(row_frame, bg="white")
+            spinbox_frame.pack(side=tk.RIGHT)
+            
+            spinbox = tk.Spinbox(spinbox_frame, from_=min_val, to=max_val, 
+                               textvariable=var, font=('Arial', 10),
+                               width=10, relief=tk.SOLID, borderwidth=1,
+                               buttonbackground="#3b82f6", justify=tk.CENTER)
+            spinbox.pack()
+            
+            # Description
+            tk.Label(inner, text=f"  💡 {desc}", font=('Arial', 8), 
+                    bg="white", fg="#6b7280").grid(row=i*3+1, column=0, columnspan=2, 
+                                                   sticky=tk.W, pady=(0, 5))
+            
+            # Separator
+            if i < len(settings) - 1:
+                sep = ttk.Separator(inner, orient='horizontal')
+                sep.grid(row=i*3+2, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=8)
+        
+        inner.columnconfigure(0, weight=1)
+        
+        # Info box
+        info_frame = tk.Frame(scrollable_frame, bg="#eff6ff", relief=tk.SOLID, borderwidth=1)
+        info_frame.pack(fill=tk.X, padx=10, pady=15)
+        
+        info_inner = tk.Frame(info_frame, bg="#eff6ff", padx=15, pady=12)
+        info_inner.pack(fill=tk.BOTH)
+        
+        tk.Label(info_inner, text="ℹ️ Important Information", 
+                font=('Arial', 10, 'bold'), bg="#eff6ff", fg="#1e40af").pack(anchor=tk.W, pady=(0, 8))
+        
+        info_text = [
+            "• Lower values = more aggressive auto-stop",
+            "• Higher values = more tolerance for temporary issues",
+            "• Changes take effect immediately for new connections",
+            "• Restart required for some monitoring parameters"
+        ]
+        
+        for text in info_text:
+            tk.Label(info_inner, text=text, font=('Arial', 9), 
+                    bg="#eff6ff", fg="#1e40af", justify=tk.LEFT).pack(anchor=tk.W, pady=2)
+    
+    def browse_directory(self):
+        """Browse for program directory"""
+        directory = filedialog.askdirectory(
+            title="Select Program Directory",
+            initialdir=self.program_dir_var.get()
+        )
+        if directory:
+            self.program_dir_var.set(directory)
+    
+    def test_ftp_connection(self):
+        """Test FTP connection"""
+        try:
+            # Show progress
+            test_window = tk.Toplevel(self.top)
+            test_window.title("Testing FTP Connection")
+            test_window.geometry("300x100")
+            test_window.transient(self.top)
+            test_window.grab_set()
+            
+            ttk.Label(test_window, text="Testing FTP connection...", font=('Arial', 10)).pack(pady=20)
+            progress = ttk.Progressbar(test_window, mode='indeterminate', length=200)
+            progress.pack(pady=10)
+            progress.start()
+            
+            # Test connection in thread
+            def test():
+                try:
+                    ftp = FTP(self.ftp_server_var.get())
+                    ftp.login(self.ftp_user_var.get(), self.ftp_password_var.get())
+                    ftp.cwd(self.ftp_directory_var.get())
+                    ftp.quit()
+                    
+                    test_window.destroy()
+                    messagebox.showinfo("Success", "FTP connection successful!")
+                except Exception as e:
+                    test_window.destroy()
+                    messagebox.showerror("Error", f"FTP connection failed:\n{e}")
+            
+            threading.Thread(target=test, daemon=True).start()
+            
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to test FTP connection:\n{e}")
+    
+    def reset_to_default(self):
+        """Reset all settings to default values"""
+        if messagebox.askyesno("Confirm Reset", "Reset all settings to default values?"):
+            # Reset to defaults
+            default_settings = AppSettings()
+            
+            # Update UI
+            self.program_dir_var.set(default_settings.program_directory)
+            self.ftp_server_var.set(default_settings.ftp_server)
+            self.ftp_user_var.set(default_settings.ftp_user)
+            self.ftp_password_var.set(default_settings.ftp_password)
+            self.ftp_directory_var.set(default_settings.ftp_directory)
+            self.max_log_lines_var.set(default_settings.max_log_lines)
+            self.idle_timeout_var.set(default_settings.idle_timeout_minutes)
+            self.max_errors_var.set(default_settings.max_consecutive_errors)
+            self.grace_period_var.set(default_settings.connection_grace_period)
+            self.disconnect_tolerance_var.set(default_settings.max_disconnect_tolerance)
+            
+            messagebox.showinfo("Reset Complete", "All settings have been reset to default values.")
+    
+    def validate_settings(self):
+        """Validate settings before saving"""
+        # Validate numeric values
+        if self.max_log_lines_var.get() < 10:
+            messagebox.showerror("Validation Error", "Max log lines must be at least 10")
+            return False
+        
+        if self.idle_timeout_var.get() < 1:
+            messagebox.showerror("Validation Error", "Idle timeout must be at least 1 minute")
+            return False
+        
+        if self.max_errors_var.get() < 1:
+            messagebox.showerror("Validation Error", "Max consecutive errors must be at least 1")
+            return False
+        
+        if self.grace_period_var.get() < 1:
+            messagebox.showerror("Validation Error", "Connection grace period must be at least 1 second")
+            return False
+        
+        if self.disconnect_tolerance_var.get() < 1:
+            messagebox.showerror("Validation Error", "Max disconnect tolerance must be at least 1")
+            return False
+        
+        # Validate FTP settings
+        if not self.ftp_server_var.get().strip():
+            messagebox.showerror("Validation Error", "FTP server cannot be empty")
+            return False
+        
+        if not self.ftp_user_var.get().strip():
+            messagebox.showerror("Validation Error", "FTP username cannot be empty")
+            return False
+        
+        return True
+    
+    def save_settings(self):
+        """Save settings and close dialog"""
+        if not self.validate_settings():
+            return
+        
+        # Update global settings
+        app_settings.program_directory = self.program_dir_var.get()
+        app_settings.ftp_server = self.ftp_server_var.get()
+        app_settings.ftp_user = self.ftp_user_var.get()
+        app_settings.ftp_password = self.ftp_password_var.get()
+        app_settings.ftp_directory = self.ftp_directory_var.get()
+        app_settings.max_log_lines = self.max_log_lines_var.get()
+        app_settings.idle_timeout_minutes = self.idle_timeout_var.get()
+        app_settings.max_consecutive_errors = self.max_errors_var.get()
+        app_settings.connection_grace_period = self.grace_period_var.get()
+        app_settings.max_disconnect_tolerance = self.disconnect_tolerance_var.get()
+        
+        # Save to file
+        if self.app.save_settings():
+            # Update app instance variables
+            self.app.max_log_lines = app_settings.max_log_lines
+            self.app.idle_timeout_minutes = app_settings.idle_timeout_minutes
+            self.app.max_consecutive_errors = app_settings.max_consecutive_errors
+            self.app.connection_grace_period = app_settings.connection_grace_period
+            self.app.max_disconnect_tolerance = app_settings.max_disconnect_tolerance
+            
+            messagebox.showinfo("Success", "Settings saved successfully!\n\nNote: Some settings may require restarting the application to take full effect.")
+            self.top.destroy()
+        else:
+            messagebox.showerror("Error", "Failed to save settings. Please try again.")
 
 def main():
     root = tk.Tk()

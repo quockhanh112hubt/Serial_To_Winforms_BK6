@@ -1,0 +1,12 @@
+{
+    "program_directory": "C:\\Serial_to_MES",
+    "ftp_server": "10.62.102.5",
+    "ftp_user": "update",
+    "ftp_password": "update",
+    "ftp_directory": "KhanhDQ/Update_Program/Serial_to_MES/",
+    "max_log_lines": 50,
+    "idle_timeout_minutes": 30,
+    "max_consecutive_errors": 10,
+    "connection_grace_period": 5,
+    "max_disconnect_tolerance": 20
+}
