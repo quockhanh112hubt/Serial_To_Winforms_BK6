@@ -653,5 +653,5 @@ def main():
     root.mainloop()
 
 if __name__ == "__main__":
-    # check_for_updates()
+    check_for_updates()
     main()
