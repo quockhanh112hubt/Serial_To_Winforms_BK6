@@ -1,0 +1,5 @@
+pyinstaller --onefile --noconsole --add-data "file.zip;." Setup.py
+pyinstaller --onefile --noconsole --add-data "Logo;Logo" --add-data "file.zip;." Setup.py
+
+pyinstaller --onefile --noconsole Main.py
+pyinstaller --onefile --noconsole update_script.py
