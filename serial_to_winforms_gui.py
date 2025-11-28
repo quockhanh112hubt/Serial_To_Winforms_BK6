@@ -254,7 +254,7 @@ class SerialToWinFormsGUI:
         title_label.grid(row=0, column=0, columnspan=2, pady=10)
         
         # Settings Frame
-        settings_frame = ttk.LabelFrame(main_frame, text="Settings", padding="10")
+        settings_frame = ttk.LabelFrame(main_frame, text="Configuration", padding="10")
         settings_frame.grid(row=1, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=5)
         
         # COM Port
@@ -816,7 +816,7 @@ class AboutDialog:
     def __init__(self, parent):
         self.top = tk.Toplevel(parent)
         self.top.title("About")
-        self.top.geometry("450x350")
+        self.top.geometry("450x450")
         self.top.resizable(False, False)
         self.top.transient(parent)
         self.top.grab_set()
@@ -825,7 +825,7 @@ class AboutDialog:
         self.top.update_idletasks()
         x = (self.top.winfo_screenwidth() // 2) - (450 // 2)
         y = (self.top.winfo_screenheight() // 2) - (350 // 2)
-        self.top.geometry(f"450x350+{x}+{y}")
+        self.top.geometry(f"450x450+{x}+{y}")
         
         self.setup_ui()
     
@@ -1357,7 +1357,7 @@ def main():
 
 if __name__ == "__main__":
     try:
-        check_for_updates()
+        # check_for_updates()
         main()
     finally:
         release_mutex()
