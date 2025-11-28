@@ -142,10 +142,20 @@ class SerialToWinFormsGUI:
         # Handle window close
         self.root.protocol("WM_DELETE_WINDOW", self.hide_to_tray)
     
+    def get_app_directory(self):
+        """Get application directory (works for both .py and .exe)"""
+        if getattr(sys, 'frozen', False):
+            # Running as compiled exe
+            return os.path.dirname(sys.executable)
+        else:
+            # Running as script
+            return os.path.dirname(os.path.abspath(__file__))
+    
     def load_settings(self):
         """Load application settings from settings.json"""
         try:
-            settings_path = os.path.join(os.path.dirname(__file__), 'settings.json')
+            app_dir = self.get_app_directory()
+            settings_path = os.path.join(app_dir, 'settings.json')
             if os.path.exists(settings_path):
                 with open(settings_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
@@ -156,7 +166,8 @@ class SerialToWinFormsGUI:
     def save_settings(self):
         """Save application settings to settings.json"""
         try:
-            settings_path = os.path.join(os.path.dirname(__file__), 'settings.json')
+            app_dir = self.get_app_directory()
+            settings_path = os.path.join(app_dir, 'settings.json')
             with open(settings_path, 'w', encoding='utf-8') as f:
                 json.dump(app_settings.to_dict(), f, indent=4, ensure_ascii=False)
             return True
@@ -331,7 +342,8 @@ class SerialToWinFormsGUI:
     def load_config(self):
         """Load configuration from config.json"""
         try:
-            config_path = os.path.join(os.path.dirname(__file__), 'config.json')
+            app_dir = self.get_app_directory()
+            config_path = os.path.join(app_dir, 'config.json')
             if os.path.exists(config_path):
                 with open(config_path, 'r', encoding='utf-8') as f:
                     config = json.load(f)
@@ -350,12 +362,8 @@ class SerialToWinFormsGUI:
     def save_config(self):
         """Save configuration to config.json"""
         try:
-            config_path = os.path.join(os.path.dirname(__file__), 'config.json')
-            
-            # Ensure directory exists
-            config_dir = os.path.dirname(config_path)
-            if config_dir and not os.path.exists(config_dir):
-                os.makedirs(config_dir, exist_ok=True)
+            app_dir = self.get_app_directory()
+            config_path = os.path.join(app_dir, 'config.json')
             
             config = {
                 'port': self.port_var.get(),

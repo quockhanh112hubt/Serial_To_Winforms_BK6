@@ -7,19 +7,53 @@ from tkinter import ttk, messagebox
 import time
 import threading
 from ftplib import FTP
+import json
+
+def get_app_directory():
+    """Get application directory (works for both .py and .exe)"""
+    if getattr(sys, 'frozen', False):
+        # Running as compiled exe
+        return os.path.dirname(sys.executable)
+    else:
+        # Running as script
+        return os.path.dirname(os.path.abspath(__file__))
+
+def load_settings():
+    """Load settings from settings.json or use defaults"""
+    try:
+        app_dir = get_app_directory()
+        settings_path = os.path.join(app_dir, 'settings.json')
+        if os.path.exists(settings_path):
+            with open(settings_path, 'r', encoding='utf-8') as f:
+                settings = json.load(f)
+                return settings
+    except Exception as e:
+        print(f"Failed to load settings: {e}, using defaults")
+    
+    # Return default settings
+    return {
+        'program_directory': 'C:\\Serial_to_MES',
+        'ftp_server': '10.62.102.5',
+        'ftp_user': 'update',
+        'ftp_password': 'update',
+        'ftp_directory': 'KhanhDQ/Update_Program/Serial_to_MES/'
+    }
+
+# Load settings
+settings = load_settings()
 
 # Đường dẫn tới thư mục chứa các file chương trình
-PROGRAM_DIRECTORY = "C:\\Serial_to_MES"
-CURRENT_VERSION_FILE = "C:\\Serial_to_MES\\version.txt"
+PROGRAM_DIRECTORY = settings.get('program_directory', 'C:\\Serial_to_MES')
+CURRENT_VERSION_FILE = os.path.join(PROGRAM_DIRECTORY, "version.txt")
 MAIN_EXECUTABLE = os.path.join(PROGRAM_DIRECTORY, "SerialToWinForms.exe")
 UPDATE_ZIP_PATH = os.path.join(PROGRAM_DIRECTORY, "update.zip")
 VERSION_FLAG_FILE = os.path.join(PROGRAM_DIRECTORY, "version_flag.txt")
 
 # Đường dẫn tới FTP Server
-FTP_SERVER = "10.62.102.5"
-FTP_USER = "update"
-FTP_PASS = "update"
-FTP_DIRECTORY = "KhanhDQ/Update_Program/Serial_to_MES/"
+FTP_SERVER = settings.get('ftp_server', '10.62.102.5')
+FTP_USER = settings.get('ftp_user', 'update')
+FTP_PASS = settings.get('ftp_password', 'update')
+FTP_DIRECTORY = settings.get('ftp_directory', 'KhanhDQ/Update_Program/Serial_to_MES/')
 
 def get_current_version():
     if os.path.exists(VERSION_FLAG_FILE):
