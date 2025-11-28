@@ -13,6 +13,50 @@ import time
 import urllib.request
 import subprocess
 from ftplib import FTP
+import ctypes
+from ctypes import wintypes
+
+# Mutex for single instance
+MUTEX_NAME = "Global\\SerialToWinFormsBK6_SingleInstance_Mutex"
+mutex_handle = None
+
+def check_single_instance():
+    """Check if another instance is already running"""
+    global mutex_handle
+    
+    # Windows API functions
+    kernel32 = ctypes.WinDLL('kernel32', use_last_error=True)
+    
+    # CreateMutex
+    kernel32.CreateMutexW.argtypes = [wintypes.LPVOID, wintypes.BOOL, wintypes.LPCWSTR]
+    kernel32.CreateMutexW.restype = wintypes.HANDLE
+    
+    # Create mutex
+    mutex_handle = kernel32.CreateMutexW(None, False, MUTEX_NAME)
+    
+    # Check if mutex already exists (ERROR_ALREADY_EXISTS = 183)
+    last_error = ctypes.get_last_error()
+    
+    if last_error == 183:  # ERROR_ALREADY_EXISTS
+        # Another instance is running
+        messagebox.showerror(
+            "Application Already Running",
+            "Serial To WinForms is already running!\n\n"
+            "Only one instance of this application can run at a time.\n"
+            "Please check the system tray or taskbar for the running instance.",
+            icon='error'
+        )
+        return False
+    
+    return True
+
+def release_mutex():
+    """Release the mutex on exit"""
+    global mutex_handle
+    if mutex_handle:
+        kernel32 = ctypes.WinDLL('kernel32')
+        kernel32.CloseHandle(mutex_handle)
+        mutex_handle = None
 
 # Default settings - will be loaded from settings.json
 class AppSettings:
@@ -1295,11 +1339,25 @@ class SettingsDialog:
             messagebox.showerror("Error", "Failed to save settings. Please try again.")
 
 def main():
+    # Check for single instance before creating GUI
+    if not check_single_instance():
+        sys.exit(1)
+    
     root = tk.Tk()
     app = SerialToWinFormsGUI(root)
     root.protocol("WM_DELETE_WINDOW", app.on_closing)
+    
+    # Release mutex on exit
+    def on_app_exit():
+        release_mutex()
+        root.quit()
+    
+    root.protocol("WM_DESTROY", on_app_exit)
     root.mainloop()
 
 if __name__ == "__main__":
-    check_for_updates()
-    main()
+    try:
+        check_for_updates()
+        main()
+    finally:
+        release_mutex()
