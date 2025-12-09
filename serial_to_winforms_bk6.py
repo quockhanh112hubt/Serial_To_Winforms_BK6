@@ -207,7 +207,7 @@ class SerialToWinForms:
             
             # Focus on the Shop-Flow window first
             self.window.set_focus()
-            time.sleep(0.2)
+            time.sleep(0.5)
             
             # First shortcut: Alt+C
             logging.info("⌨️ Pressing Alt+C...")
