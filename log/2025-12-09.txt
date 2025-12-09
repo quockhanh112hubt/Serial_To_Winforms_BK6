@@ -1,0 +1,1383 @@
+2025-12-09 08:50:26,290 - INFO - Available serial ports: ['COM4', 'COM3', 'COM10', 'COM8', 'COM11', 'COM9']
+2025-12-09 08:50:26,291 - INFO - Serial port COM10 connected successfully
+2025-12-09 08:50:26,323 - INFO - Running windows:
+2025-12-09 08:50:26,327 - INFO -   - 'Battery Meter'
+2025-12-09 08:50:26,328 - INFO -   - 'Network Flyout'
+2025-12-09 08:50:26,329 - INFO -   - 'Window'
+2025-12-09 08:50:26,329 - INFO -   - 'Window'
+2025-12-09 08:50:26,330 - INFO -   - 'popdown'
+2025-12-09 08:50:26,331 - INFO -   - 'popdown'
+2025-12-09 08:50:26,333 - INFO -   - 'popdown'
+2025-12-09 08:50:26,335 - INFO -   - 'popdown'
+2025-12-09 08:50:26,336 - INFO -   - 'popdown'
+2025-12-09 08:50:26,337 - INFO -   - 'popdown'
+2025-12-09 08:50:26,339 - INFO -   - 'popdown'
+2025-12-09 08:50:26,340 - INFO -   - 'popdown'
+2025-12-09 08:50:26,340 - INFO -   - 'popdown'
+2025-12-09 08:50:26,342 - INFO -   - 'popdown'
+2025-12-09 08:50:26,343 - INFO -   - 'popdown'
+2025-12-09 08:50:26,345 - INFO -   - 'popdown'
+2025-12-09 08:50:26,347 - INFO -   - 'popdown'
+2025-12-09 08:50:26,350 - INFO -   - 'popdown'
+2025-12-09 08:50:26,351 - INFO -   - 'popdown'
+2025-12-09 08:50:26,353 - INFO -   - 'popdown'
+2025-12-09 08:50:26,354 - INFO -   - 'popdown'
+2025-12-09 08:50:26,356 - INFO -   - 'popdown'
+2025-12-09 08:50:26,357 - INFO -   - 'popdown'
+2025-12-09 08:50:26,361 - INFO -   - 'popdown'
+2025-12-09 08:50:26,362 - INFO -   - 'popdown'
+2025-12-09 08:50:26,363 - INFO -   - 'popdown'
+2025-12-09 08:50:26,364 - INFO -   - 'popdown'
+2025-12-09 08:50:26,367 - INFO -   - 'Zalo'
+2025-12-09 08:50:26,370 - INFO -   - 'Serial To WinForms - Control Panel v0.0.0'
+2025-12-09 08:50:26,371 - INFO -   - 'TclNotifier'
+2025-12-09 08:50:26,394 - INFO -   - 'EmbeddedMenuWindow'
+2025-12-09 08:50:26,396 - INFO -   - 'MenuWindow'
+2025-12-09 08:50:26,397 - INFO -   - 'TtkMonitorWindow'
+2025-12-09 08:50:26,398 - INFO -   - 'serial_to_winforms_gui.py - Serial_To_Winforms_BK6 - Visual Studio Code [Administrator]'
+2025-12-09 08:50:26,400 - INFO -   - 'Yêu thích của Tông Khánh - A Tuân, Huyền Tranng, EM XINH "SAY HI", Phương Mỹ Chi - tải mp3 | lời bài hát - NhacCuaTui - Brave'
+2025-12-09 08:50:26,403 - INFO -   - 'WhatsApp'
+2025-12-09 08:50:26,406 - INFO -   - 'ODM SET단톡방'
+2025-12-09 08:50:26,409 - INFO -   - 'KakaoTalk'
+2025-12-09 08:50:26,425 - INFO -   - '김창교, 황민호, 이종민, 향기 ~ Hương, ITM A Vương IT, ...'
+2025-12-09 08:50:26,426 - INFO -   - 'MobaXterm'
+2025-12-09 08:50:26,450 - INFO -   - 'MobaXterm passwords settings'
+2025-12-09 08:50:26,453 - INFO -   - 'MobaXterm Configuration'
+2025-12-09 08:50:26,455 - INFO -   - 'Session settings'
+2025-12-09 08:50:26,456 - INFO -   - 'MobaXterm Professional'
+2025-12-09 08:50:26,458 - INFO -   - 'MobaXterm'
+2025-12-09 08:50:26,460 - INFO -   - 'ITMI PROD, TECHNIC, QC LEADER'
+2025-12-09 08:50:26,460 - INFO -   - 'Zalo'
+2025-12-09 08:50:26,461 - INFO -   - 'ZaloCap'
+2025-12-09 08:50:26,466 - INFO -   - 'Downloads'
+2025-12-09 08:50:26,472 - INFO -   - 'Minh Sơnn'
+2025-12-09 08:50:26,499 - INFO -   - 'xwinclip'
+2025-12-09 08:50:26,530 - INFO -   - 'MobaXterm X server:0.0'
+2025-12-09 08:50:26,533 - INFO -   - 'XWin Msg Window'
+2025-12-09 08:50:26,573 - INFO -   - 'GDI+ Window (MobaXterm.exe)'
+2025-12-09 08:50:26,578 - INFO -   - 'DDE Server Window'
+2025-12-09 08:50:26,581 - INFO -   - 'Shop-Flow System From Indonesia(Pack)'
+2025-12-09 08:50:26,584 - INFO -     ^ Potential match for target app!
+2025-12-09 08:50:26,588 - INFO -   - '.NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0'
+2025-12-09 08:50:26,591 - INFO -   - 'GDI+ Window (MIGHTY.ASFC.ITMPACK_INDONESIA.exe)'
+2025-12-09 08:50:26,591 - INFO -   - 'ActiveMovie Window'
+2025-12-09 08:50:26,594 - INFO -   - 'theAwtToolkitWindow'
+2025-12-09 08:50:26,595 - INFO -   - 'PartRenderingEngine's limbo'
+2025-12-09 08:50:26,597 - INFO -   - 'GDI+ Window (dbeaver.exe)'
+2025-12-09 08:50:26,601 - INFO -   - 'Settings'
+2025-12-09 08:50:26,603 - INFO -   - 'EmbeddedMenuWindow'
+2025-12-09 08:50:26,604 - INFO -   - 'MenuWindow'
+2025-12-09 08:50:26,605 - INFO -   - 'ITM Translate v2.0.29'
+2025-12-09 08:50:26,606 - INFO -   - 'TtkMonitorWindow'
+2025-12-09 08:50:26,608 - INFO -   - 'CloudStation'
+2025-12-09 08:50:26,609 - INFO -   - 'cloud-drive-ui'
+2025-12-09 08:50:26,610 - INFO -   - 'QTrayIconMessageWindow'
+2025-12-09 08:50:26,611 - INFO -   - 'ChatGPT'
+2025-12-09 08:50:26,613 - INFO -   - '_eva_Win32Timer_Window'
+2025-12-09 08:50:26,614 - INFO -   - 'ITM Translate'
+2025-12-09 08:50:26,615 - INFO -   - 'GDI+ Window (KakaoTalk.exe)'
+2025-12-09 08:50:26,617 - INFO -   - 'NotifyIconWindowTitle'
+2025-12-09 08:50:26,618 - INFO -   - 'RealtekAudioBackgroundProcessClass'
+2025-12-09 08:50:26,619 - INFO -   - 'BluetoothNotificationAreaIconWindowClass'
+2025-12-09 08:50:26,620 - INFO -   - 'FortiTray Desktop'
+2025-12-09 08:50:26,621 - INFO -   - 'MS_WebcheckMonitor'
+2025-12-09 08:50:26,622 - INFO -   - 'DDE Server Window'
+2025-12-09 08:50:26,623 - INFO -   - 'RealtekAudioAdminBackgroundProcessClass'
+2025-12-09 08:50:26,625 - INFO -   - 'SWT_Window_DBeaver'
+2025-12-09 08:50:26,626 - INFO -   - 'GDI+ Window (EVKey.exe)'
+2025-12-09 08:50:26,627 - INFO -   - 'Microsoft Text Input Application'
+2025-12-09 08:50:26,628 - INFO -   - 'NvSvc'
+2025-12-09 08:50:26,629 - INFO -   - 'UxdService'
+2025-12-09 08:50:26,630 - INFO -   - 'EVKey'
+2025-12-09 08:50:26,632 - INFO -   - 'The Event Manager Dashboard'
+2025-12-09 08:50:26,635 - INFO -   - 'Windows Push Notifications Platform'
+2025-12-09 08:50:26,636 - INFO -   - 'Task Host Window'
+2025-12-09 08:50:26,637 - INFO -   - 'Task Host Window'
+2025-12-09 08:50:26,638 - INFO -   - 'FortiTray Daemon'
+2025-12-09 08:50:26,639 - INFO -   - 'NvContainerWindowClass00000DDC'
+2025-12-09 08:50:26,639 - INFO -   - 'DWM Notification Window'
+2025-12-09 08:50:26,849 - INFO -   - 'PyInstaller Onefile Hidden Window'
+2025-12-09 08:50:26,852 - INFO -   - 'WinServiceWnd'
+2025-12-09 08:50:26,857 - INFO -   - 'Shared Worker'
+2025-12-09 08:50:26,867 - INFO -   - 'DBeaver 25.3.0 - <ITMVPACKMES-INDO> Script-69'
+2025-12-09 08:50:26,870 - INFO -   - 'GitHub Desktop'
+2025-12-09 08:50:26,876 - INFO -   - '192.168.63.100'
+2025-12-09 08:50:26,877 - INFO -   - 'Program Manager'
+2025-12-09 08:50:26,877 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,878 - INFO -   - 'M'
+2025-12-09 08:50:26,878 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,879 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,880 - INFO -   - 'M'
+2025-12-09 08:50:26,881 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,882 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,885 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,886 - INFO -   - 'M'
+2025-12-09 08:50:26,887 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,888 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,890 - INFO -   - 'M'
+2025-12-09 08:50:26,890 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,891 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,892 - INFO -   - 'M'
+2025-12-09 08:50:26,893 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,893 - INFO -   - 'M'
+2025-12-09 08:50:26,894 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,895 - INFO -   - 'M'
+2025-12-09 08:50:26,896 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,897 - INFO -   - 'M'
+2025-12-09 08:50:26,898 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,901 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,902 - INFO -   - 'M'
+2025-12-09 08:50:26,903 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,904 - INFO -   - 'M'
+2025-12-09 08:50:26,905 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,906 - INFO -   - 'M'
+2025-12-09 08:50:26,906 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,908 - INFO -   - 'M'
+2025-12-09 08:50:26,908 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,909 - INFO -   - 'M'
+2025-12-09 08:50:26,910 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,911 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,912 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,913 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,913 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,914 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,915 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,918 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,919 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,921 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,921 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,922 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,923 - INFO -   - 'M'
+2025-12-09 08:50:26,924 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,925 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,925 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,926 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,928 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,929 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,930 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,931 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,932 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,932 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,933 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,934 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,937 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,939 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,940 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,941 - INFO -   - 'M'
+2025-12-09 08:50:26,942 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,943 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,943 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,944 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,945 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,946 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,947 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,948 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,948 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,949 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,952 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,953 - INFO -   - 'M'
+2025-12-09 08:50:26,954 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,955 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,955 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,956 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,957 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,958 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,958 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,959 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,960 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,960 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,961 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,961 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,961 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,962 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,962 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,962 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,963 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,963 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,964 - INFO -   - 'M'
+2025-12-09 08:50:26,964 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,966 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,967 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,968 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,969 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,970 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,972 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,972 - INFO -   - 'M'
+2025-12-09 08:50:26,973 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,974 - INFO -   - 'M'
+2025-12-09 08:50:26,975 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,976 - INFO -   - 'M'
+2025-12-09 08:50:26,977 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,977 - INFO -   - 'M'
+2025-12-09 08:50:26,978 - INFO -   - 'Default IME'
+2025-12-09 08:50:26,979 - INFO - Trying to connect to application with title: 'Shop-Flow System From Vietnam(Pack)'
+2025-12-09 08:50:27,113 - INFO - Connected to window: 'Shop-Flow System From Indonesia(Pack)'
+2025-12-09 08:50:27,138 - INFO - Found 17 windows in the application:
+2025-12-09 08:50:27,139 - INFO -   Window 0: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:50:27,140 - INFO -   Window 1: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:50:27,142 - INFO -   Window 2: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:50:27,143 - INFO -   Window 3: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:50:27,145 - INFO -   Window 4: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:50:27,147 - INFO -   Window 5: , class: WindowsForms10.Window.20808.app.0.33c0d9d, type: HwndWrapper
+2025-12-09 08:50:27,148 - INFO -   Window 6: , class: WindowsForms10.Window.20808.app.0.33c0d9d, type: HwndWrapper
+2025-12-09 08:50:27,151 - INFO -   Window 7: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:50:27,152 - INFO -   Window 8: Shop-Flow System From Indonesia(Pack), class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:50:27,154 - INFO -   Window 9: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:50:27,155 - INFO -   Window 10: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:50:27,158 - INFO -   Window 11: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:50:27,161 - INFO -   Window 12: .NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0, class: .NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0, type: DialogWrapper
+2025-12-09 08:50:27,164 - INFO -   Window 13: GDI+ Window (MIGHTY.ASFC.ITMPACK_INDONESIA.exe), class: GDI+ Hook Window Class, type: DialogWrapper
+2025-12-09 08:50:27,164 - INFO -   Window 14: M, class: MSCTFIME UI, type: DialogWrapper
+2025-12-09 08:50:27,165 - INFO -   Window 15: Default IME, class: IME, type: DialogWrapper
+2025-12-09 08:50:27,166 - INFO -   Window 16: Default IME, class: IME, type: DialogWrapper
+2025-12-09 08:50:27,172 - INFO - Selected main window: Shop-Flow System From Indonesia(Pack)
+2025-12-09 08:50:27,511 - INFO - Looking for textbox with auto_id: 'GIFTBOX_AUTO'
+2025-12-09 08:50:27,512 - INFO - WinForms app connection and textbox discovery successful
+2025-12-09 08:50:27,515 - INFO - Background process started
+2025-12-09 08:51:03,966 - INFO - Raw serial data received: STXRESETETX (Read time: 0.221s)
+2025-12-09 08:51:03,967 - INFO - Parsed STX/ETX format: 'STXRESETETX' → 'RESET'
+2025-12-09 08:51:03,968 - INFO - 🔄 RESET command received from serial
+2025-12-09 08:51:04,376 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:51:05,434 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:51:05,488 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:51:05,990 - INFO - ✅ Reset button clicked (Time: 2.006s)
+2025-12-09 08:51:34,632 - INFO - Available serial ports: ['COM4', 'COM3', 'COM10', 'COM8', 'COM11', 'COM9']
+2025-12-09 08:51:34,634 - INFO - Serial port COM10 connected successfully
+2025-12-09 08:51:34,664 - INFO - Running windows:
+2025-12-09 08:51:34,669 - INFO -   - 'KakaoTalkShadowWnd'
+2025-12-09 08:51:34,673 - INFO -   - 'Battery Meter'
+2025-12-09 08:51:34,674 - INFO -   - 'Network Flyout'
+2025-12-09 08:51:34,676 - INFO -   - 'Window'
+2025-12-09 08:51:34,677 - INFO -   - 'Window'
+2025-12-09 08:51:34,678 - INFO -   - 'popdown'
+2025-12-09 08:51:34,680 - INFO -   - 'popdown'
+2025-12-09 08:51:34,681 - INFO -   - 'popdown'
+2025-12-09 08:51:34,683 - INFO -   - 'popdown'
+2025-12-09 08:51:34,686 - INFO -   - 'popdown'
+2025-12-09 08:51:34,690 - INFO -   - 'popdown'
+2025-12-09 08:51:34,692 - INFO -   - 'popdown'
+2025-12-09 08:51:34,693 - INFO -   - 'popdown'
+2025-12-09 08:51:34,695 - INFO -   - 'popdown'
+2025-12-09 08:51:34,696 - INFO -   - 'popdown'
+2025-12-09 08:51:34,697 - INFO -   - 'popdown'
+2025-12-09 08:51:34,697 - INFO -   - 'popdown'
+2025-12-09 08:51:34,698 - INFO -   - 'popdown'
+2025-12-09 08:51:34,699 - INFO -   - 'popdown'
+2025-12-09 08:51:34,703 - INFO -   - 'popdown'
+2025-12-09 08:51:34,705 - INFO -   - 'popdown'
+2025-12-09 08:51:34,706 - INFO -   - 'popdown'
+2025-12-09 08:51:34,708 - INFO -   - 'popdown'
+2025-12-09 08:51:34,709 - INFO -   - 'popdown'
+2025-12-09 08:51:34,711 - INFO -   - 'popdown'
+2025-12-09 08:51:34,712 - INFO -   - 'popdown'
+2025-12-09 08:51:34,713 - INFO -   - 'popdown'
+2025-12-09 08:51:34,714 - INFO -   - 'popdown'
+2025-12-09 08:51:34,716 - INFO -   - 'Zalo'
+2025-12-09 08:51:34,719 - INFO -   - 'Serial To WinForms - Control Panel v0.0.0'
+2025-12-09 08:51:34,720 - INFO -   - 'Shop-Flow System From Indonesia(Pack)'
+2025-12-09 08:51:34,722 - INFO -     ^ Potential match for target app!
+2025-12-09 08:51:34,724 - INFO -   - 'serial_to_winforms_gui.py - Serial_To_Winforms_BK6 - Visual Studio Code [Administrator]'
+2025-12-09 08:51:34,725 - INFO -   - 'Task Host Window'
+2025-12-09 08:51:34,728 - INFO -   - 'TclNotifier'
+2025-12-09 08:51:34,746 - INFO -   - 'EmbeddedMenuWindow'
+2025-12-09 08:51:34,748 - INFO -   - 'MenuWindow'
+2025-12-09 08:51:34,751 - INFO -   - 'TtkMonitorWindow'
+2025-12-09 08:51:34,754 - INFO -   - 'Yêu thích của Tông Khánh - A Tuân, Huyền Tranng, EM XINH "SAY HI", Phương Mỹ Chi - tải mp3 | lời bài hát - NhacCuaTui - Brave'
+2025-12-09 08:51:34,757 - INFO -   - 'WhatsApp'
+2025-12-09 08:51:34,762 - INFO -   - 'ODM SET단톡방'
+2025-12-09 08:51:34,765 - INFO -   - 'KakaoTalk'
+2025-12-09 08:51:34,771 - INFO -   - '김창교, 황민호, 이종민, 향기 ~ Hương, ITM A Vương IT, ...'
+2025-12-09 08:51:34,772 - INFO -   - 'MobaXterm'
+2025-12-09 08:51:34,774 - INFO -   - 'MobaXterm passwords settings'
+2025-12-09 08:51:34,775 - INFO -   - 'MobaXterm Configuration'
+2025-12-09 08:51:34,776 - INFO -   - 'Session settings'
+2025-12-09 08:51:34,776 - INFO -   - 'MobaXterm Professional'
+2025-12-09 08:51:34,777 - INFO -   - 'MobaXterm'
+2025-12-09 08:51:34,778 - INFO -   - 'ITMI PROD, TECHNIC, QC LEADER'
+2025-12-09 08:51:34,780 - INFO -   - 'Zalo'
+2025-12-09 08:51:34,781 - INFO -   - 'ZaloCap'
+2025-12-09 08:51:34,786 - INFO -   - 'Downloads'
+2025-12-09 08:51:34,789 - INFO -   - 'Minh Sơnn'
+2025-12-09 08:51:34,813 - INFO -   - 'xwinclip'
+2025-12-09 08:51:34,843 - INFO -   - 'MobaXterm X server:0.0'
+2025-12-09 08:51:34,848 - INFO -   - 'XWin Msg Window'
+2025-12-09 08:51:34,861 - INFO -   - 'GDI+ Window (MobaXterm.exe)'
+2025-12-09 08:51:34,863 - INFO -   - 'DDE Server Window'
+2025-12-09 08:51:34,864 - INFO -   - '.NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0'
+2025-12-09 08:51:34,865 - INFO -   - 'GDI+ Window (MIGHTY.ASFC.ITMPACK_INDONESIA.exe)'
+2025-12-09 08:51:34,866 - INFO -   - 'ActiveMovie Window'
+2025-12-09 08:51:34,870 - INFO -   - 'theAwtToolkitWindow'
+2025-12-09 08:51:34,871 - INFO -   - 'PartRenderingEngine's limbo'
+2025-12-09 08:51:34,874 - INFO -   - 'GDI+ Window (dbeaver.exe)'
+2025-12-09 08:51:34,875 - INFO -   - 'Settings'
+2025-12-09 08:51:34,877 - INFO -   - 'EmbeddedMenuWindow'
+2025-12-09 08:51:34,878 - INFO -   - 'MenuWindow'
+2025-12-09 08:51:34,880 - INFO -   - 'ITM Translate v2.0.29'
+2025-12-09 08:51:34,882 - INFO -   - 'TtkMonitorWindow'
+2025-12-09 08:51:34,884 - INFO -   - 'CloudStation'
+2025-12-09 08:51:34,887 - INFO -   - 'cloud-drive-ui'
+2025-12-09 08:51:34,889 - INFO -   - 'QTrayIconMessageWindow'
+2025-12-09 08:51:34,890 - INFO -   - 'ChatGPT'
+2025-12-09 08:51:34,892 - INFO -   - '_eva_Win32Timer_Window'
+2025-12-09 08:51:34,893 - INFO -   - 'ITM Translate'
+2025-12-09 08:51:34,894 - INFO -   - 'GDI+ Window (KakaoTalk.exe)'
+2025-12-09 08:51:34,895 - INFO -   - 'NotifyIconWindowTitle'
+2025-12-09 08:51:34,896 - INFO -   - 'RealtekAudioBackgroundProcessClass'
+2025-12-09 08:51:34,898 - INFO -   - 'BluetoothNotificationAreaIconWindowClass'
+2025-12-09 08:51:34,901 - INFO -   - 'FortiTray Desktop'
+2025-12-09 08:51:34,905 - INFO -   - 'MS_WebcheckMonitor'
+2025-12-09 08:51:34,909 - INFO -   - 'DDE Server Window'
+2025-12-09 08:51:34,910 - INFO -   - 'RealtekAudioAdminBackgroundProcessClass'
+2025-12-09 08:51:34,913 - INFO -   - 'SWT_Window_DBeaver'
+2025-12-09 08:51:34,916 - INFO -   - 'GDI+ Window (EVKey.exe)'
+2025-12-09 08:51:34,921 - INFO -   - 'Microsoft Text Input Application'
+2025-12-09 08:51:34,922 - INFO -   - 'NvSvc'
+2025-12-09 08:51:34,923 - INFO -   - 'UxdService'
+2025-12-09 08:51:34,925 - INFO -   - 'EVKey'
+2025-12-09 08:51:34,927 - INFO -   - 'The Event Manager Dashboard'
+2025-12-09 08:51:34,928 - INFO -   - 'Windows Push Notifications Platform'
+2025-12-09 08:51:34,929 - INFO -   - 'Task Host Window'
+2025-12-09 08:51:34,930 - INFO -   - 'Task Host Window'
+2025-12-09 08:51:34,931 - INFO -   - 'FortiTray Daemon'
+2025-12-09 08:51:34,932 - INFO -   - 'NvContainerWindowClass00000DDC'
+2025-12-09 08:51:34,934 - INFO -   - 'DWM Notification Window'
+2025-12-09 08:51:35,086 - INFO -   - 'PyInstaller Onefile Hidden Window'
+2025-12-09 08:51:35,091 - INFO -   - 'WinServiceWnd'
+2025-12-09 08:51:35,098 - INFO -   - 'Shared Worker'
+2025-12-09 08:51:35,110 - INFO -   - 'DBeaver 25.3.0 - <ITMVPACKMES-INDO> Script-69'
+2025-12-09 08:51:35,112 - INFO -   - 'GitHub Desktop'
+2025-12-09 08:51:35,114 - INFO -   - '192.168.63.100'
+2025-12-09 08:51:35,114 - INFO -   - 'Program Manager'
+2025-12-09 08:51:35,116 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,116 - INFO -   - 'M'
+2025-12-09 08:51:35,119 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,121 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,123 - INFO -   - 'M'
+2025-12-09 08:51:35,124 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,126 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,127 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,128 - INFO -   - 'M'
+2025-12-09 08:51:35,128 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,129 - INFO -   - 'M'
+2025-12-09 08:51:35,130 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,131 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,132 - INFO -   - 'M'
+2025-12-09 08:51:35,134 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,135 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,138 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,139 - INFO -   - 'M'
+2025-12-09 08:51:35,141 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,142 - INFO -   - 'M'
+2025-12-09 08:51:35,143 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,146 - INFO -   - 'M'
+2025-12-09 08:51:35,147 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,148 - INFO -   - 'M'
+2025-12-09 08:51:35,149 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,151 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,152 - INFO -   - 'M'
+2025-12-09 08:51:35,154 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,156 - INFO -   - 'M'
+2025-12-09 08:51:35,157 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,159 - INFO -   - 'M'
+2025-12-09 08:51:35,162 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,163 - INFO -   - 'M'
+2025-12-09 08:51:35,164 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,166 - INFO -   - 'M'
+2025-12-09 08:51:35,167 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,169 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,170 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,172 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,174 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,177 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,178 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,179 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,180 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,181 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,181 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,182 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,183 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,185 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,186 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,188 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,189 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,189 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,190 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,192 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,193 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,194 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,195 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,196 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,197 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,199 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,201 - INFO -   - 'M'
+2025-12-09 08:51:35,203 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,205 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,207 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,209 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,210 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,212 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,213 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,214 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,215 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,217 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,220 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,222 - INFO -   - 'M'
+2025-12-09 08:51:35,223 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,224 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,225 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,226 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,227 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,228 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,229 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,230 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,231 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,232 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,234 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,236 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,238 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,240 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,241 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,243 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,244 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,245 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,246 - INFO -   - 'M'
+2025-12-09 08:51:35,248 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,248 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,250 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,251 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,253 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,255 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,256 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,258 - INFO -   - 'M'
+2025-12-09 08:51:35,259 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,260 - INFO -   - 'M'
+2025-12-09 08:51:35,261 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,262 - INFO -   - 'M'
+2025-12-09 08:51:35,263 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,264 - INFO -   - 'M'
+2025-12-09 08:51:35,264 - INFO -   - 'Default IME'
+2025-12-09 08:51:35,265 - INFO - Trying to connect to application with title: 'Shop-Flow System From Vietnam(Pack)'
+2025-12-09 08:51:35,293 - INFO - Connected to window: 'Shop-Flow System From Indonesia(Pack)'
+2025-12-09 08:51:35,298 - INFO - Found 17 windows in the application:
+2025-12-09 08:51:35,300 - INFO -   Window 0: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:51:35,302 - INFO -   Window 1: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:51:35,305 - INFO -   Window 2: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:51:35,307 - INFO -   Window 3: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:51:35,310 - INFO -   Window 4: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:51:35,314 - INFO -   Window 5: , class: WindowsForms10.Window.20808.app.0.33c0d9d, type: HwndWrapper
+2025-12-09 08:51:35,316 - INFO -   Window 6: , class: WindowsForms10.Window.20808.app.0.33c0d9d, type: HwndWrapper
+2025-12-09 08:51:35,317 - INFO -   Window 7: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:51:35,321 - INFO -   Window 8: Shop-Flow System From Indonesia(Pack), class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:51:35,324 - INFO -   Window 9: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:51:35,326 - INFO -   Window 10: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:51:35,329 - INFO -   Window 11: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:51:35,331 - INFO -   Window 12: .NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0, class: .NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0, type: DialogWrapper
+2025-12-09 08:51:35,334 - INFO -   Window 13: GDI+ Window (MIGHTY.ASFC.ITMPACK_INDONESIA.exe), class: GDI+ Hook Window Class, type: DialogWrapper
+2025-12-09 08:51:35,338 - INFO -   Window 14: M, class: MSCTFIME UI, type: DialogWrapper
+2025-12-09 08:51:35,340 - INFO -   Window 15: Default IME, class: IME, type: DialogWrapper
+2025-12-09 08:51:35,342 - INFO -   Window 16: Default IME, class: IME, type: DialogWrapper
+2025-12-09 08:51:35,345 - INFO - Selected main window: Shop-Flow System From Indonesia(Pack)
+2025-12-09 08:51:35,616 - INFO - Looking for textbox with auto_id: 'DEVICEID_AUTO'
+2025-12-09 08:51:35,618 - INFO - WinForms app connection and textbox discovery successful
+2025-12-09 08:51:35,622 - INFO - Background process started
+2025-12-09 08:51:44,406 - INFO - Raw serial data received: STXRESETETX (Read time: 0.723s)
+2025-12-09 08:51:44,411 - INFO - Parsed STX/ETX format: 'STXRESETETX' → 'RESET'
+2025-12-09 08:51:44,415 - INFO - 🔄 RESET command received from serial
+2025-12-09 08:51:44,816 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:51:45,891 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:51:45,976 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:51:46,480 - INFO - ✅ Reset button clicked (Time: 2.063s)
+2025-12-09 08:52:33,084 - INFO - Available serial ports: ['COM4', 'COM3', 'COM10', 'COM8', 'COM11', 'COM9']
+2025-12-09 08:52:33,089 - INFO - Serial port COM10 connected successfully
+2025-12-09 08:52:33,120 - INFO - Running windows:
+2025-12-09 08:52:33,124 - INFO -   - 'Battery Meter'
+2025-12-09 08:52:33,126 - INFO -   - 'Network Flyout'
+2025-12-09 08:52:33,130 - INFO -   - 'Window'
+2025-12-09 08:52:33,131 - INFO -   - 'Window'
+2025-12-09 08:52:33,132 - INFO -   - 'popdown'
+2025-12-09 08:52:33,133 - INFO -   - 'popdown'
+2025-12-09 08:52:33,134 - INFO -   - 'popdown'
+2025-12-09 08:52:33,135 - INFO -   - 'popdown'
+2025-12-09 08:52:33,135 - INFO -   - 'popdown'
+2025-12-09 08:52:33,136 - INFO -   - 'popdown'
+2025-12-09 08:52:33,136 - INFO -   - 'popdown'
+2025-12-09 08:52:33,137 - INFO -   - 'popdown'
+2025-12-09 08:52:33,137 - INFO -   - 'popdown'
+2025-12-09 08:52:33,138 - INFO -   - 'popdown'
+2025-12-09 08:52:33,139 - INFO -   - 'popdown'
+2025-12-09 08:52:33,140 - INFO -   - 'popdown'
+2025-12-09 08:52:33,141 - INFO -   - 'popdown'
+2025-12-09 08:52:33,143 - INFO -   - 'popdown'
+2025-12-09 08:52:33,144 - INFO -   - 'popdown'
+2025-12-09 08:52:33,147 - INFO -   - 'popdown'
+2025-12-09 08:52:33,149 - INFO -   - 'popdown'
+2025-12-09 08:52:33,150 - INFO -   - 'popdown'
+2025-12-09 08:52:33,151 - INFO -   - 'popdown'
+2025-12-09 08:52:33,152 - INFO -   - 'popdown'
+2025-12-09 08:52:33,152 - INFO -   - 'popdown'
+2025-12-09 08:52:33,153 - INFO -   - 'popdown'
+2025-12-09 08:52:33,154 - INFO -   - 'popdown'
+2025-12-09 08:52:33,155 - INFO -   - 'Zalo'
+2025-12-09 08:52:33,156 - INFO -   - 'Serial To WinForms - Control Panel v0.0.0'
+2025-12-09 08:52:33,180 - INFO -   - 'EmbeddedMenuWindow'
+2025-12-09 08:52:33,182 - INFO -   - 'MenuWindow'
+2025-12-09 08:52:33,183 - INFO -   - 'TtkMonitorWindow'
+2025-12-09 08:52:33,184 - INFO -   - 'serial_to_winforms_gui.py - Serial_To_Winforms_BK6 - Visual Studio Code [Administrator]'
+2025-12-09 08:52:33,185 - INFO -   - 'Shop-Flow System From Indonesia(Pack)'
+2025-12-09 08:52:33,187 - INFO -     ^ Potential match for target app!
+2025-12-09 08:52:33,189 - INFO -   - 'Task Host Window'
+2025-12-09 08:52:33,190 - INFO -   - 'Yêu thích của Tông Khánh - A Tuân, Huyền Tranng, EM XINH "SAY HI", Phương Mỹ Chi - tải mp3 | lời bài hát - NhacCuaTui - Brave'
+2025-12-09 08:52:33,191 - INFO -   - 'WhatsApp'
+2025-12-09 08:52:33,194 - INFO -   - 'ODM SET단톡방'
+2025-12-09 08:52:33,197 - INFO -   - 'KakaoTalk'
+2025-12-09 08:52:33,249 - INFO -   - '김창교, 황민호, 이종민, 향기 ~ Hương, ITM A Vương IT, ...'
+2025-12-09 08:52:33,250 - INFO -   - 'MobaXterm'
+2025-12-09 08:52:33,251 - INFO -   - 'MobaXterm passwords settings'
+2025-12-09 08:52:33,252 - INFO -   - 'MobaXterm Configuration'
+2025-12-09 08:52:33,253 - INFO -   - 'Session settings'
+2025-12-09 08:52:33,254 - INFO -   - 'MobaXterm Professional'
+2025-12-09 08:52:33,255 - INFO -   - 'MobaXterm'
+2025-12-09 08:52:33,257 - INFO -   - 'ITMI PROD, TECHNIC, QC LEADER'
+2025-12-09 08:52:33,257 - INFO -   - 'Zalo'
+2025-12-09 08:52:33,260 - INFO -   - 'ZaloCap'
+2025-12-09 08:52:33,265 - INFO -   - 'Downloads'
+2025-12-09 08:52:33,267 - INFO -   - 'Minh Sơnn'
+2025-12-09 08:52:33,297 - INFO -   - 'xwinclip'
+2025-12-09 08:52:33,327 - INFO -   - 'MobaXterm X server:0.0'
+2025-12-09 08:52:33,328 - INFO -   - 'XWin Msg Window'
+2025-12-09 08:52:33,333 - INFO -   - 'GDI+ Window (MobaXterm.exe)'
+2025-12-09 08:52:33,334 - INFO -   - 'DDE Server Window'
+2025-12-09 08:52:33,335 - INFO -   - '.NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0'
+2025-12-09 08:52:33,336 - INFO -   - 'GDI+ Window (MIGHTY.ASFC.ITMPACK_INDONESIA.exe)'
+2025-12-09 08:52:33,336 - INFO -   - 'ActiveMovie Window'
+2025-12-09 08:52:33,338 - INFO -   - 'theAwtToolkitWindow'
+2025-12-09 08:52:33,338 - INFO -   - 'PartRenderingEngine's limbo'
+2025-12-09 08:52:33,339 - INFO -   - 'GDI+ Window (dbeaver.exe)'
+2025-12-09 08:52:33,340 - INFO -   - 'Settings'
+2025-12-09 08:52:33,342 - INFO -   - 'EmbeddedMenuWindow'
+2025-12-09 08:52:33,344 - INFO -   - 'MenuWindow'
+2025-12-09 08:52:33,346 - INFO -   - 'ITM Translate v2.0.29'
+2025-12-09 08:52:33,349 - INFO -   - 'TtkMonitorWindow'
+2025-12-09 08:52:33,350 - INFO -   - 'CloudStation'
+2025-12-09 08:52:33,353 - INFO -   - 'cloud-drive-ui'
+2025-12-09 08:52:33,353 - INFO -   - 'QTrayIconMessageWindow'
+2025-12-09 08:52:33,354 - INFO -   - 'ChatGPT'
+2025-12-09 08:52:33,355 - INFO -   - '_eva_Win32Timer_Window'
+2025-12-09 08:52:33,356 - INFO -   - 'ITM Translate'
+2025-12-09 08:52:33,357 - INFO -   - 'GDI+ Window (KakaoTalk.exe)'
+2025-12-09 08:52:33,361 - INFO -   - 'NotifyIconWindowTitle'
+2025-12-09 08:52:33,364 - INFO -   - 'RealtekAudioBackgroundProcessClass'
+2025-12-09 08:52:33,365 - INFO -   - 'BluetoothNotificationAreaIconWindowClass'
+2025-12-09 08:52:33,366 - INFO -   - 'FortiTray Desktop'
+2025-12-09 08:52:33,368 - INFO -   - 'MS_WebcheckMonitor'
+2025-12-09 08:52:33,370 - INFO -   - 'DDE Server Window'
+2025-12-09 08:52:33,371 - INFO -   - 'RealtekAudioAdminBackgroundProcessClass'
+2025-12-09 08:52:33,375 - INFO -   - 'SWT_Window_DBeaver'
+2025-12-09 08:52:33,377 - INFO -   - 'GDI+ Window (EVKey.exe)'
+2025-12-09 08:52:33,381 - INFO -   - 'Microsoft Text Input Application'
+2025-12-09 08:52:33,382 - INFO -   - 'NvSvc'
+2025-12-09 08:52:33,384 - INFO -   - 'UxdService'
+2025-12-09 08:52:33,386 - INFO -   - 'EVKey'
+2025-12-09 08:52:33,387 - INFO -   - 'The Event Manager Dashboard'
+2025-12-09 08:52:33,389 - INFO -   - 'Windows Push Notifications Platform'
+2025-12-09 08:52:33,391 - INFO -   - 'Task Host Window'
+2025-12-09 08:52:33,394 - INFO -   - 'Task Host Window'
+2025-12-09 08:52:33,395 - INFO -   - 'FortiTray Daemon'
+2025-12-09 08:52:33,397 - INFO -   - 'NvContainerWindowClass00000DDC'
+2025-12-09 08:52:33,399 - INFO -   - 'DWM Notification Window'
+2025-12-09 08:52:33,523 - INFO -   - 'PyInstaller Onefile Hidden Window'
+2025-12-09 08:52:33,524 - INFO -   - 'WinServiceWnd'
+2025-12-09 08:52:33,525 - INFO -   - 'Shared Worker'
+2025-12-09 08:52:33,530 - INFO -   - 'DBeaver 25.3.0 - <ITMVPACKMES-INDO> Script-69'
+2025-12-09 08:52:33,531 - INFO -   - 'GitHub Desktop'
+2025-12-09 08:52:33,533 - INFO -   - '192.168.63.100'
+2025-12-09 08:52:33,534 - INFO -   - 'Program Manager'
+2025-12-09 08:52:33,535 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,535 - INFO -   - 'M'
+2025-12-09 08:52:33,536 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,536 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,537 - INFO -   - 'M'
+2025-12-09 08:52:33,538 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,539 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,539 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,540 - INFO -   - 'M'
+2025-12-09 08:52:33,540 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,541 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,542 - INFO -   - 'M'
+2025-12-09 08:52:33,543 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,545 - INFO -   - 'M'
+2025-12-09 08:52:33,546 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,547 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,548 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,550 - INFO -   - 'M'
+2025-12-09 08:52:33,550 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,551 - INFO -   - 'M'
+2025-12-09 08:52:33,551 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,552 - INFO -   - 'M'
+2025-12-09 08:52:33,552 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,554 - INFO -   - 'M'
+2025-12-09 08:52:33,555 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,555 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,556 - INFO -   - 'M'
+2025-12-09 08:52:33,557 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,557 - INFO -   - 'M'
+2025-12-09 08:52:33,559 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,560 - INFO -   - 'M'
+2025-12-09 08:52:33,562 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,563 - INFO -   - 'M'
+2025-12-09 08:52:33,564 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,565 - INFO -   - 'M'
+2025-12-09 08:52:33,565 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,567 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,567 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,568 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,569 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,570 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,570 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,571 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,572 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,572 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,573 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,574 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,575 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,577 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,578 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,579 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,580 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,581 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,582 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,582 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,583 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,585 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,585 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,586 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,587 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,588 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,589 - INFO -   - 'M'
+2025-12-09 08:52:33,590 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,590 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,591 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,592 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,593 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,594 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,596 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,596 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,597 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,599 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,600 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,600 - INFO -   - 'M'
+2025-12-09 08:52:33,601 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,602 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,602 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,603 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,604 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,604 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,605 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,606 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,606 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,607 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,608 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,608 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,611 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,611 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,613 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,615 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,616 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,617 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,617 - INFO -   - 'M'
+2025-12-09 08:52:33,618 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,618 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,619 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,620 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,621 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,622 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,622 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,622 - INFO -   - 'M'
+2025-12-09 08:52:33,623 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,624 - INFO -   - 'M'
+2025-12-09 08:52:33,625 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,626 - INFO -   - 'M'
+2025-12-09 08:52:33,627 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,628 - INFO -   - 'M'
+2025-12-09 08:52:33,629 - INFO -   - 'Default IME'
+2025-12-09 08:52:33,631 - INFO - Trying to connect to application with title: 'Shop-Flow System From Vietnam(Pack)'
+2025-12-09 08:52:33,682 - INFO - Connected to window: 'Shop-Flow System From Indonesia(Pack)'
+2025-12-09 08:52:33,687 - INFO - Found 17 windows in the application:
+2025-12-09 08:52:33,688 - INFO -   Window 0: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:52:33,689 - INFO -   Window 1: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:52:33,691 - INFO -   Window 2: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:52:33,691 - INFO -   Window 3: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:52:33,692 - INFO -   Window 4: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:52:33,694 - INFO -   Window 5: , class: WindowsForms10.Window.20808.app.0.33c0d9d, type: HwndWrapper
+2025-12-09 08:52:33,695 - INFO -   Window 6: , class: WindowsForms10.Window.20808.app.0.33c0d9d, type: HwndWrapper
+2025-12-09 08:52:33,698 - INFO -   Window 7: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:52:33,700 - INFO -   Window 8: Shop-Flow System From Indonesia(Pack), class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:52:33,701 - INFO -   Window 9: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:52:33,703 - INFO -   Window 10: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:52:33,704 - INFO -   Window 11: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:52:33,705 - INFO -   Window 12: .NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0, class: .NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0, type: DialogWrapper
+2025-12-09 08:52:33,706 - INFO -   Window 13: GDI+ Window (MIGHTY.ASFC.ITMPACK_INDONESIA.exe), class: GDI+ Hook Window Class, type: DialogWrapper
+2025-12-09 08:52:33,708 - INFO -   Window 14: M, class: MSCTFIME UI, type: DialogWrapper
+2025-12-09 08:52:33,709 - INFO -   Window 15: Default IME, class: IME, type: DialogWrapper
+2025-12-09 08:52:33,710 - INFO -   Window 16: Default IME, class: IME, type: DialogWrapper
+2025-12-09 08:52:33,716 - INFO - Selected main window: Shop-Flow System From Indonesia(Pack)
+2025-12-09 08:52:33,891 - INFO - Looking for textbox with auto_id: 'DEVICEID_AUTO'
+2025-12-09 08:52:33,897 - INFO - WinForms app connection and textbox discovery successful
+2025-12-09 08:52:33,916 - INFO - Background process started
+2025-12-09 08:52:52,006 - INFO - Raw serial data received: STXRESETETX (Read time: 0.982s)
+2025-12-09 08:52:52,008 - INFO - Parsed STX/ETX format: 'STXRESETETX' → 'RESET'
+2025-12-09 08:52:52,009 - INFO - 🔄 RESET command received from serial
+2025-12-09 08:52:52,423 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:52:53,481 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:52:53,550 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:52:54,053 - INFO - ✅ Reset button clicked (Time: 2.031s)
+2025-12-09 08:54:19,874 - INFO - Available serial ports: ['COM4', 'COM3', 'COM10', 'COM8', 'COM11', 'COM9']
+2025-12-09 08:54:19,880 - INFO - Serial port COM10 connected successfully
+2025-12-09 08:54:19,910 - INFO - Running windows:
+2025-12-09 08:54:19,915 - INFO -   - 'Battery Meter'
+2025-12-09 08:54:19,917 - INFO -   - 'Network Flyout'
+2025-12-09 08:54:19,919 - INFO -   - 'Window'
+2025-12-09 08:54:19,920 - INFO -   - 'Window'
+2025-12-09 08:54:19,921 - INFO -   - 'popdown'
+2025-12-09 08:54:19,922 - INFO -   - 'popdown'
+2025-12-09 08:54:19,923 - INFO -   - 'popdown'
+2025-12-09 08:54:19,924 - INFO -   - 'popdown'
+2025-12-09 08:54:19,925 - INFO -   - 'popdown'
+2025-12-09 08:54:19,926 - INFO -   - 'popdown'
+2025-12-09 08:54:19,927 - INFO -   - 'popdown'
+2025-12-09 08:54:19,928 - INFO -   - 'popdown'
+2025-12-09 08:54:19,928 - INFO -   - 'popdown'
+2025-12-09 08:54:19,929 - INFO -   - 'popdown'
+2025-12-09 08:54:19,929 - INFO -   - 'popdown'
+2025-12-09 08:54:19,930 - INFO -   - 'popdown'
+2025-12-09 08:54:19,930 - INFO -   - 'popdown'
+2025-12-09 08:54:19,930 - INFO -   - 'popdown'
+2025-12-09 08:54:19,934 - INFO -   - 'popdown'
+2025-12-09 08:54:19,935 - INFO -   - 'popdown'
+2025-12-09 08:54:19,937 - INFO -   - 'popdown'
+2025-12-09 08:54:19,938 - INFO -   - 'popdown'
+2025-12-09 08:54:19,939 - INFO -   - 'popdown'
+2025-12-09 08:54:19,939 - INFO -   - 'popdown'
+2025-12-09 08:54:19,940 - INFO -   - 'popdown'
+2025-12-09 08:54:19,940 - INFO -   - 'popdown'
+2025-12-09 08:54:19,941 - INFO -   - 'popdown'
+2025-12-09 08:54:19,943 - INFO -   - 'Zalo'
+2025-12-09 08:54:19,945 - INFO -   - 'Serial To WinForms - Control Panel v0.0.0'
+2025-12-09 08:54:19,974 - INFO -   - 'EmbeddedMenuWindow'
+2025-12-09 08:54:19,976 - INFO -   - 'MenuWindow'
+2025-12-09 08:54:19,978 - INFO -   - 'TtkMonitorWindow'
+2025-12-09 08:54:19,979 - INFO -   - 'serial_to_winforms_gui.py - Serial_To_Winforms_BK6 - Visual Studio Code [Administrator]'
+2025-12-09 08:54:19,980 - INFO -   - 'Shop-Flow System From Indonesia(Pack)'
+2025-12-09 08:54:19,982 - INFO -     ^ Potential match for target app!
+2025-12-09 08:54:19,985 - INFO -   - 'KakaoTalk'
+2025-12-09 08:54:19,987 - INFO -   - 'Task Host Window'
+2025-12-09 08:54:19,988 - INFO -   - 'Yêu thích của Tông Khánh - A Tuân, Huyền Tranng, EM XINH "SAY HI", Phương Mỹ Chi - tải mp3 | lời bài hát - NhacCuaTui - Brave'
+2025-12-09 08:54:19,989 - INFO -   - 'WhatsApp'
+2025-12-09 08:54:19,993 - INFO -   - 'ODM SET단톡방'
+2025-12-09 08:54:19,996 - INFO -   - '김창교, 황민호, 이종민, 향기 ~ Hương, ITM A Vương IT, ...'
+2025-12-09 08:54:20,059 - INFO -   - 'MobaXterm'
+2025-12-09 08:54:20,079 - INFO -   - 'MobaXterm passwords settings'
+2025-12-09 08:54:20,080 - INFO -   - 'MobaXterm Configuration'
+2025-12-09 08:54:20,081 - INFO -   - 'Session settings'
+2025-12-09 08:54:20,089 - INFO -   - 'MobaXterm Professional'
+2025-12-09 08:54:20,090 - INFO -   - 'MobaXterm'
+2025-12-09 08:54:20,091 - INFO -   - 'ITMI PROD, TECHNIC, QC LEADER'
+2025-12-09 08:54:20,092 - INFO -   - 'Zalo'
+2025-12-09 08:54:20,093 - INFO -   - 'ZaloCap'
+2025-12-09 08:54:20,096 - INFO -   - 'Downloads'
+2025-12-09 08:54:20,100 - INFO -   - 'Minh Sơnn'
+2025-12-09 08:54:20,130 - INFO -   - 'xwinclip'
+2025-12-09 08:54:20,159 - INFO -   - 'MobaXterm X server:0.0'
+2025-12-09 08:54:20,165 - INFO -   - 'XWin Msg Window'
+2025-12-09 08:54:20,179 - INFO -   - 'GDI+ Window (MobaXterm.exe)'
+2025-12-09 08:54:20,180 - INFO -   - 'DDE Server Window'
+2025-12-09 08:54:20,181 - INFO -   - '.NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0'
+2025-12-09 08:54:20,184 - INFO -   - 'GDI+ Window (MIGHTY.ASFC.ITMPACK_INDONESIA.exe)'
+2025-12-09 08:54:20,185 - INFO -   - 'ActiveMovie Window'
+2025-12-09 08:54:20,187 - INFO -   - 'theAwtToolkitWindow'
+2025-12-09 08:54:20,188 - INFO -   - 'PartRenderingEngine's limbo'
+2025-12-09 08:54:20,189 - INFO -   - 'GDI+ Window (dbeaver.exe)'
+2025-12-09 08:54:20,191 - INFO -   - 'Settings'
+2025-12-09 08:54:20,191 - INFO -   - 'EmbeddedMenuWindow'
+2025-12-09 08:54:20,192 - INFO -   - 'MenuWindow'
+2025-12-09 08:54:20,193 - INFO -   - 'ITM Translate v2.0.29'
+2025-12-09 08:54:20,193 - INFO -   - 'TtkMonitorWindow'
+2025-12-09 08:54:20,194 - INFO -   - 'CloudStation'
+2025-12-09 08:54:20,195 - INFO -   - 'cloud-drive-ui'
+2025-12-09 08:54:20,196 - INFO -   - 'QTrayIconMessageWindow'
+2025-12-09 08:54:20,197 - INFO -   - 'ChatGPT'
+2025-12-09 08:54:20,200 - INFO -   - '_eva_Win32Timer_Window'
+2025-12-09 08:54:20,201 - INFO -   - 'ITM Translate'
+2025-12-09 08:54:20,203 - INFO -   - 'GDI+ Window (KakaoTalk.exe)'
+2025-12-09 08:54:20,204 - INFO -   - 'NotifyIconWindowTitle'
+2025-12-09 08:54:20,205 - INFO -   - 'RealtekAudioBackgroundProcessClass'
+2025-12-09 08:54:20,207 - INFO -   - 'BluetoothNotificationAreaIconWindowClass'
+2025-12-09 08:54:20,207 - INFO -   - 'FortiTray Desktop'
+2025-12-09 08:54:20,208 - INFO -   - 'MS_WebcheckMonitor'
+2025-12-09 08:54:20,210 - INFO -   - 'DDE Server Window'
+2025-12-09 08:54:20,210 - INFO -   - 'RealtekAudioAdminBackgroundProcessClass'
+2025-12-09 08:54:20,212 - INFO -   - 'SWT_Window_DBeaver'
+2025-12-09 08:54:20,213 - INFO -   - 'GDI+ Window (EVKey.exe)'
+2025-12-09 08:54:20,215 - INFO -   - 'Microsoft Text Input Application'
+2025-12-09 08:54:20,217 - INFO -   - 'NvSvc'
+2025-12-09 08:54:20,219 - INFO -   - 'UxdService'
+2025-12-09 08:54:20,221 - INFO -   - 'EVKey'
+2025-12-09 08:54:20,222 - INFO -   - 'The Event Manager Dashboard'
+2025-12-09 08:54:20,224 - INFO -   - 'Windows Push Notifications Platform'
+2025-12-09 08:54:20,225 - INFO -   - 'Task Host Window'
+2025-12-09 08:54:20,225 - INFO -   - 'Task Host Window'
+2025-12-09 08:54:20,226 - INFO -   - 'FortiTray Daemon'
+2025-12-09 08:54:20,227 - INFO -   - 'NvContainerWindowClass00000DDC'
+2025-12-09 08:54:20,227 - INFO -   - 'DWM Notification Window'
+2025-12-09 08:54:20,341 - INFO -   - 'PyInstaller Onefile Hidden Window'
+2025-12-09 08:54:20,343 - INFO -   - 'WinServiceWnd'
+2025-12-09 08:54:20,351 - INFO -   - 'Shared Worker'
+2025-12-09 08:54:20,382 - INFO -   - 'DBeaver 25.3.0 - <ITMVPACKMES-INDO> Script-69'
+2025-12-09 08:54:20,384 - INFO -   - 'GitHub Desktop'
+2025-12-09 08:54:20,388 - INFO -   - '192.168.63.100'
+2025-12-09 08:54:20,389 - INFO -   - 'Program Manager'
+2025-12-09 08:54:20,389 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,390 - INFO -   - 'M'
+2025-12-09 08:54:20,391 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,391 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,392 - INFO -   - 'M'
+2025-12-09 08:54:20,392 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,393 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,393 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,394 - INFO -   - 'M'
+2025-12-09 08:54:20,394 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,395 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,396 - INFO -   - 'M'
+2025-12-09 08:54:20,396 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,397 - INFO -   - 'M'
+2025-12-09 08:54:20,398 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,400 - INFO -   - 'M'
+2025-12-09 08:54:20,402 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,403 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,403 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,404 - INFO -   - 'M'
+2025-12-09 08:54:20,405 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,406 - INFO -   - 'M'
+2025-12-09 08:54:20,406 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,407 - INFO -   - 'M'
+2025-12-09 08:54:20,408 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,408 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,409 - INFO -   - 'M'
+2025-12-09 08:54:20,409 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,410 - INFO -   - 'M'
+2025-12-09 08:54:20,411 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,411 - INFO -   - 'M'
+2025-12-09 08:54:20,412 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,413 - INFO -   - 'M'
+2025-12-09 08:54:20,413 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,413 - INFO -   - 'M'
+2025-12-09 08:54:20,415 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,417 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,418 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,418 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,419 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,420 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,421 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,422 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,422 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,423 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,424 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,424 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,425 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,426 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,426 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,427 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,427 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,428 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,429 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,430 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,430 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,431 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,433 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,434 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,435 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,437 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,438 - INFO -   - 'M'
+2025-12-09 08:54:20,438 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,439 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,440 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,441 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,441 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,442 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,442 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,443 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,443 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,444 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,445 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,446 - INFO -   - 'M'
+2025-12-09 08:54:20,447 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,447 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,449 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,450 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,452 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,453 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,454 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,454 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,455 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,456 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,456 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,457 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,458 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,458 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,459 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,460 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,460 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,461 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,462 - INFO -   - 'M'
+2025-12-09 08:54:20,462 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,463 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,464 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,464 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,467 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,468 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,469 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,470 - INFO -   - 'M'
+2025-12-09 08:54:20,471 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,471 - INFO -   - 'M'
+2025-12-09 08:54:20,472 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,473 - INFO -   - 'M'
+2025-12-09 08:54:20,473 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,474 - INFO -   - 'M'
+2025-12-09 08:54:20,475 - INFO -   - 'Default IME'
+2025-12-09 08:54:20,477 - INFO - Trying to connect to application with title: 'Shop-Flow System From Vietnam(Pack)'
+2025-12-09 08:54:20,535 - INFO - Connected to window: 'Shop-Flow System From Indonesia(Pack)'
+2025-12-09 08:54:20,541 - INFO - Found 23 windows in the application:
+2025-12-09 08:54:20,542 - INFO -   Window 0: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,543 - INFO -   Window 1: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,544 - INFO -   Window 2: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,545 - INFO -   Window 3: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,545 - INFO -   Window 4: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,546 - INFO -   Window 5: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,546 - INFO -   Window 6: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,547 - INFO -   Window 7: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,548 - INFO -   Window 8: , class: WindowsForms10.Window.20808.app.0.33c0d9d, type: HwndWrapper
+2025-12-09 08:54:20,550 - INFO -   Window 9: , class: WindowsForms10.Window.20808.app.0.33c0d9d, type: HwndWrapper
+2025-12-09 08:54:20,552 - INFO -   Window 10: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,554 - INFO -   Window 11: Shop-Flow System From Indonesia(Pack), class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,555 - INFO -   Window 12: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,557 - INFO -   Window 13: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,558 - INFO -   Window 14: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,559 - INFO -   Window 15: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,560 - INFO -   Window 16: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,562 - INFO -   Window 17: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:54:20,563 - INFO -   Window 18: .NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0, class: .NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0, type: DialogWrapper
+2025-12-09 08:54:20,564 - INFO -   Window 19: GDI+ Window (MIGHTY.ASFC.ITMPACK_INDONESIA.exe), class: GDI+ Hook Window Class, type: DialogWrapper
+2025-12-09 08:54:20,565 - INFO -   Window 20: M, class: MSCTFIME UI, type: DialogWrapper
+2025-12-09 08:54:20,569 - INFO -   Window 21: Default IME, class: IME, type: DialogWrapper
+2025-12-09 08:54:20,570 - INFO -   Window 22: Default IME, class: IME, type: DialogWrapper
+2025-12-09 08:54:20,573 - INFO - Selected main window: Shop-Flow System From Indonesia(Pack)
+2025-12-09 08:54:20,752 - INFO - Looking for textbox with auto_id: 'GIFTBOX_AUTO'
+2025-12-09 08:54:20,753 - INFO - WinForms app connection and textbox discovery successful
+2025-12-09 08:54:20,758 - INFO - Background process started
+2025-12-09 08:54:25,341 - INFO - Raw serial data received: STXRESETETX (Read time: 0.557s)
+2025-12-09 08:54:25,344 - INFO - Parsed STX/ETX format: 'STXRESETETX' → 'RESET'
+2025-12-09 08:54:25,345 - INFO - 🔄 RESET command received from serial
+2025-12-09 08:54:25,762 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:54:26,834 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:54:26,916 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:54:27,427 - INFO - ✅ Reset button clicked (Time: 2.066s)
+2025-12-09 08:54:58,960 - INFO - Raw serial data received: STXRESETETX (Read time: 0.355s)
+2025-12-09 08:54:58,961 - INFO - Parsed STX/ETX format: 'STXRESETETX' → 'RESET'
+2025-12-09 08:54:58,962 - INFO - 🔄 RESET command received from serial
+2025-12-09 08:54:59,393 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:55:00,480 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:55:00,551 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:55:01,053 - INFO - ✅ Reset button clicked (Time: 2.090s)
+2025-12-09 08:55:42,759 - INFO - Raw serial data received: STXRESETETX (Read time: 0.267s)
+2025-12-09 08:55:42,760 - INFO - Parsed STX/ETX format: 'STXRESETETX' → 'RESET'
+2025-12-09 08:55:42,761 - INFO - 🔄 RESET command received from serial
+2025-12-09 08:55:43,178 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:55:44,274 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:55:44,345 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:55:44,846 - INFO - ✅ Reset button clicked (Time: 2.084s)
+2025-12-09 08:55:49,942 - INFO - Raw serial data received: STXRESETETX (Read time: 0.067s)
+2025-12-09 08:55:49,944 - INFO - Parsed STX/ETX format: 'STXRESETETX' → 'RESET'
+2025-12-09 08:55:49,945 - INFO - 🔄 RESET command received from serial
+2025-12-09 08:55:50,376 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:55:51,474 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:55:51,533 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:55:52,035 - INFO - ✅ Reset button clicked (Time: 2.089s)
+2025-12-09 08:56:03,373 - INFO - Raw serial data received: STXRESETETX (Read time: 0.295s)
+2025-12-09 08:56:03,374 - INFO - Parsed STX/ETX format: 'STXRESETETX' → 'RESET'
+2025-12-09 08:56:03,374 - INFO - 🔄 RESET command received from serial
+2025-12-09 08:56:03,776 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:56:04,887 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:56:04,945 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:56:05,448 - INFO - ✅ Reset button clicked (Time: 2.073s)
+2025-12-09 08:56:18,954 - INFO - Available serial ports: ['COM4', 'COM3', 'COM10', 'COM8', 'COM11', 'COM9']
+2025-12-09 08:56:18,960 - INFO - Serial port COM10 connected successfully
+2025-12-09 08:56:18,993 - INFO - Running windows:
+2025-12-09 08:56:18,996 - INFO -   - 'Battery Meter'
+2025-12-09 08:56:18,997 - INFO -   - 'Network Flyout'
+2025-12-09 08:56:18,999 - INFO -   - 'Window'
+2025-12-09 08:56:19,002 - INFO -   - 'Window'
+2025-12-09 08:56:19,004 - INFO -   - 'popdown'
+2025-12-09 08:56:19,006 - INFO -   - 'popdown'
+2025-12-09 08:56:19,008 - INFO -   - 'popdown'
+2025-12-09 08:56:19,008 - INFO -   - 'popdown'
+2025-12-09 08:56:19,010 - INFO -   - 'popdown'
+2025-12-09 08:56:19,011 - INFO -   - 'popdown'
+2025-12-09 08:56:19,012 - INFO -   - 'popdown'
+2025-12-09 08:56:19,014 - INFO -   - 'popdown'
+2025-12-09 08:56:19,015 - INFO -   - 'popdown'
+2025-12-09 08:56:19,015 - INFO -   - 'popdown'
+2025-12-09 08:56:19,017 - INFO -   - 'popdown'
+2025-12-09 08:56:19,020 - INFO -   - 'popdown'
+2025-12-09 08:56:19,022 - INFO -   - 'popdown'
+2025-12-09 08:56:19,024 - INFO -   - 'popdown'
+2025-12-09 08:56:19,025 - INFO -   - 'popdown'
+2025-12-09 08:56:19,026 - INFO -   - 'popdown'
+2025-12-09 08:56:19,027 - INFO -   - 'popdown'
+2025-12-09 08:56:19,028 - INFO -   - 'popdown'
+2025-12-09 08:56:19,029 - INFO -   - 'popdown'
+2025-12-09 08:56:19,030 - INFO -   - 'popdown'
+2025-12-09 08:56:19,032 - INFO -   - 'popdown'
+2025-12-09 08:56:19,033 - INFO -   - 'popdown'
+2025-12-09 08:56:19,037 - INFO -   - 'popdown'
+2025-12-09 08:56:19,040 - INFO -   - 'Zalo'
+2025-12-09 08:56:19,043 - INFO -   - 'Serial To WinForms - Control Panel v0.0.0'
+2025-12-09 08:56:19,045 - INFO -   - 'Shop-Flow System From Indonesia(Pack)'
+2025-12-09 08:56:19,045 - INFO -     ^ Potential match for target app!
+2025-12-09 08:56:19,047 - INFO -   - 'serial_to_winforms_gui.py - Serial_To_Winforms_BK6 - Visual Studio Code [Administrator]'
+2025-12-09 08:56:19,071 - INFO -   - 'EmbeddedMenuWindow'
+2025-12-09 08:56:19,075 - INFO -   - 'MenuWindow'
+2025-12-09 08:56:19,077 - INFO -   - 'TtkMonitorWindow'
+2025-12-09 08:56:19,081 - INFO -   - 'KakaoTalk'
+2025-12-09 08:56:19,081 - INFO -   - 'Task Host Window'
+2025-12-09 08:56:19,082 - INFO -   - 'Yêu thích của Tông Khánh - A Tuân, Huyền Tranng, EM XINH "SAY HI", Phương Mỹ Chi - tải mp3 | lời bài hát - NhacCuaTui - Brave'
+2025-12-09 08:56:19,085 - INFO -   - 'WhatsApp'
+2025-12-09 08:56:19,094 - INFO -   - 'ODM SET단톡방'
+2025-12-09 08:56:19,099 - INFO -   - '김창교, 황민호, 이종민, 향기 ~ Hương, ITM A Vương IT, ...'
+2025-12-09 08:56:19,101 - INFO -   - 'MobaXterm'
+2025-12-09 08:56:19,107 - INFO -   - 'MobaXterm passwords settings'
+2025-12-09 08:56:19,110 - INFO -   - 'MobaXterm Configuration'
+2025-12-09 08:56:19,112 - INFO -   - 'Session settings'
+2025-12-09 08:56:19,114 - INFO -   - 'MobaXterm Professional'
+2025-12-09 08:56:19,115 - INFO -   - 'MobaXterm'
+2025-12-09 08:56:19,119 - INFO -   - 'ITMI PROD, TECHNIC, QC LEADER'
+2025-12-09 08:56:19,120 - INFO -   - 'Zalo'
+2025-12-09 08:56:19,122 - INFO -   - 'ZaloCap'
+2025-12-09 08:56:19,126 - INFO -   - 'Downloads'
+2025-12-09 08:56:19,128 - INFO -   - 'Minh Sơnn'
+2025-12-09 08:56:19,155 - INFO -   - 'xwinclip'
+2025-12-09 08:56:19,185 - INFO -   - 'MobaXterm X server:0.0'
+2025-12-09 08:56:19,187 - INFO -   - 'XWin Msg Window'
+2025-12-09 08:56:19,191 - INFO -   - 'GDI+ Window (MobaXterm.exe)'
+2025-12-09 08:56:19,193 - INFO -   - 'DDE Server Window'
+2025-12-09 08:56:19,194 - INFO -   - '.NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0'
+2025-12-09 08:56:19,195 - INFO -   - 'GDI+ Window (MIGHTY.ASFC.ITMPACK_INDONESIA.exe)'
+2025-12-09 08:56:19,196 - INFO -   - 'ActiveMovie Window'
+2025-12-09 08:56:19,198 - INFO -   - 'theAwtToolkitWindow'
+2025-12-09 08:56:19,199 - INFO -   - 'PartRenderingEngine's limbo'
+2025-12-09 08:56:19,202 - INFO -   - 'GDI+ Window (dbeaver.exe)'
+2025-12-09 08:56:19,207 - INFO -   - 'Settings'
+2025-12-09 08:56:19,209 - INFO -   - 'EmbeddedMenuWindow'
+2025-12-09 08:56:19,209 - INFO -   - 'MenuWindow'
+2025-12-09 08:56:19,210 - INFO -   - 'ITM Translate v2.0.29'
+2025-12-09 08:56:19,211 - INFO -   - 'TtkMonitorWindow'
+2025-12-09 08:56:19,213 - INFO -   - 'CloudStation'
+2025-12-09 08:56:19,214 - INFO -   - 'cloud-drive-ui'
+2025-12-09 08:56:19,216 - INFO -   - 'QTrayIconMessageWindow'
+2025-12-09 08:56:19,218 - INFO -   - 'ChatGPT'
+2025-12-09 08:56:19,219 - INFO -   - '_eva_Win32Timer_Window'
+2025-12-09 08:56:19,220 - INFO -   - 'ITM Translate'
+2025-12-09 08:56:19,222 - INFO -   - 'GDI+ Window (KakaoTalk.exe)'
+2025-12-09 08:56:19,223 - INFO -   - 'NotifyIconWindowTitle'
+2025-12-09 08:56:19,224 - INFO -   - 'RealtekAudioBackgroundProcessClass'
+2025-12-09 08:56:19,226 - INFO -   - 'BluetoothNotificationAreaIconWindowClass'
+2025-12-09 08:56:19,227 - INFO -   - 'FortiTray Desktop'
+2025-12-09 08:56:19,228 - INFO -   - 'MS_WebcheckMonitor'
+2025-12-09 08:56:19,230 - INFO -   - 'DDE Server Window'
+2025-12-09 08:56:19,231 - INFO -   - 'RealtekAudioAdminBackgroundProcessClass'
+2025-12-09 08:56:19,233 - INFO -   - 'SWT_Window_DBeaver'
+2025-12-09 08:56:19,236 - INFO -   - 'GDI+ Window (EVKey.exe)'
+2025-12-09 08:56:19,240 - INFO -   - 'Microsoft Text Input Application'
+2025-12-09 08:56:19,240 - INFO -   - 'NvSvc'
+2025-12-09 08:56:19,241 - INFO -   - 'UxdService'
+2025-12-09 08:56:19,243 - INFO -   - 'EVKey'
+2025-12-09 08:56:19,244 - INFO -   - 'The Event Manager Dashboard'
+2025-12-09 08:56:19,245 - INFO -   - 'Windows Push Notifications Platform'
+2025-12-09 08:56:19,246 - INFO -   - 'Task Host Window'
+2025-12-09 08:56:19,247 - INFO -   - 'Task Host Window'
+2025-12-09 08:56:19,249 - INFO -   - 'FortiTray Daemon'
+2025-12-09 08:56:19,251 - INFO -   - 'NvContainerWindowClass00000DDC'
+2025-12-09 08:56:19,252 - INFO -   - 'DWM Notification Window'
+2025-12-09 08:56:19,414 - INFO -   - 'PyInstaller Onefile Hidden Window'
+2025-12-09 08:56:19,419 - INFO -   - 'WinServiceWnd'
+2025-12-09 08:56:19,428 - INFO -   - 'Shared Worker'
+2025-12-09 08:56:19,442 - INFO -   - 'DBeaver 25.3.0 - <ITMVPACKMES-INDO> Script-69'
+2025-12-09 08:56:19,444 - INFO -   - 'GitHub Desktop'
+2025-12-09 08:56:19,448 - INFO -   - '192.168.63.100'
+2025-12-09 08:56:19,448 - INFO -   - 'Program Manager'
+2025-12-09 08:56:19,449 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,452 - INFO -   - 'M'
+2025-12-09 08:56:19,454 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,455 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,456 - INFO -   - 'M'
+2025-12-09 08:56:19,457 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,459 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,460 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,461 - INFO -   - 'M'
+2025-12-09 08:56:19,462 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,463 - INFO -   - 'M'
+2025-12-09 08:56:19,465 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,466 - INFO -   - 'M'
+2025-12-09 08:56:19,468 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,469 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,471 - INFO -   - 'M'
+2025-12-09 08:56:19,472 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,473 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,474 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,476 - INFO -   - 'M'
+2025-12-09 08:56:19,476 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,477 - INFO -   - 'M'
+2025-12-09 08:56:19,478 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,479 - INFO -   - 'M'
+2025-12-09 08:56:19,481 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,482 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,484 - INFO -   - 'M'
+2025-12-09 08:56:19,486 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,492 - INFO -   - 'M'
+2025-12-09 08:56:19,494 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,496 - INFO -   - 'M'
+2025-12-09 08:56:19,498 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,500 - INFO -   - 'M'
+2025-12-09 08:56:19,503 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,505 - INFO -   - 'M'
+2025-12-09 08:56:19,508 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,509 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,511 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,512 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,513 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,514 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,514 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,516 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,518 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,520 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,521 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,522 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,524 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,525 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,526 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,527 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,528 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,529 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,530 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,531 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,532 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,533 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,535 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,537 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,538 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,539 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,540 - INFO -   - 'M'
+2025-12-09 08:56:19,541 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,542 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,543 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,545 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,546 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,547 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,548 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,549 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,551 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,554 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,555 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,556 - INFO -   - 'M'
+2025-12-09 08:56:19,558 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,559 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,560 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,561 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,562 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,563 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,564 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,566 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,568 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,569 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,571 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,572 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,573 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,575 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,576 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,578 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,579 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,580 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,581 - INFO -   - 'M'
+2025-12-09 08:56:19,582 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,585 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,586 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,587 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,589 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,590 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,592 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,593 - INFO -   - 'M'
+2025-12-09 08:56:19,594 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,595 - INFO -   - 'M'
+2025-12-09 08:56:19,597 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,598 - INFO -   - 'M'
+2025-12-09 08:56:19,600 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,602 - INFO -   - 'M'
+2025-12-09 08:56:19,604 - INFO -   - 'Default IME'
+2025-12-09 08:56:19,605 - INFO - Trying to connect to application with title: 'Shop-Flow System From Vietnam(Pack)'
+2025-12-09 08:56:19,631 - INFO - Connected to window: 'Shop-Flow System From Indonesia(Pack)'
+2025-12-09 08:56:19,638 - INFO - Found 23 windows in the application:
+2025-12-09 08:56:19,639 - INFO -   Window 0: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,641 - INFO -   Window 1: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,644 - INFO -   Window 2: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,646 - INFO -   Window 3: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,648 - INFO -   Window 4: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,651 - INFO -   Window 5: , class: WindowsForms10.tooltips_class32.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,654 - INFO -   Window 6: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,657 - INFO -   Window 7: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,659 - INFO -   Window 8: , class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,662 - INFO -   Window 9: , class: WindowsForms10.Window.20808.app.0.33c0d9d, type: HwndWrapper
+2025-12-09 08:56:19,664 - INFO -   Window 10: , class: WindowsForms10.Window.20808.app.0.33c0d9d, type: HwndWrapper
+2025-12-09 08:56:19,666 - INFO -   Window 11: Shop-Flow System From Indonesia(Pack), class: WindowsForms10.Window.8.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,669 - INFO -   Window 12: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,674 - INFO -   Window 13: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,677 - INFO -   Window 14: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,680 - INFO -   Window 15: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,682 - INFO -   Window 16: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,687 - INFO -   Window 17: , class: WindowsForms10.Window.0.app.0.33c0d9d, type: DialogWrapper
+2025-12-09 08:56:19,690 - INFO -   Window 18: .NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0, class: .NET-BroadcastEventWindow.2.0.0.0.33c0d9d.0, type: DialogWrapper
+2025-12-09 08:56:19,692 - INFO -   Window 19: GDI+ Window (MIGHTY.ASFC.ITMPACK_INDONESIA.exe), class: GDI+ Hook Window Class, type: DialogWrapper
+2025-12-09 08:56:19,694 - INFO -   Window 20: M, class: MSCTFIME UI, type: DialogWrapper
+2025-12-09 08:56:19,697 - INFO -   Window 21: Default IME, class: IME, type: DialogWrapper
+2025-12-09 08:56:19,698 - INFO -   Window 22: Default IME, class: IME, type: DialogWrapper
+2025-12-09 08:56:19,703 - INFO - Selected main window: Shop-Flow System From Indonesia(Pack)
+2025-12-09 08:56:19,879 - INFO - Looking for textbox with auto_id: 'DEVICEID_AUTO'
+2025-12-09 08:56:19,881 - INFO - WinForms app connection and textbox discovery successful
+2025-12-09 08:56:19,885 - INFO - Background process started
+2025-12-09 08:56:26,805 - INFO - Raw serial data received: STXRESETETX (Read time: 0.892s)
+2025-12-09 08:56:26,808 - INFO - Parsed STX/ETX format: 'STXRESETETX' → 'RESET'
+2025-12-09 08:56:26,810 - INFO - 🔄 RESET command received from serial
+2025-12-09 08:56:27,226 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:56:28,309 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:56:28,395 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:56:29,214 - INFO - ✅ Reset button clicked (Time: 2.401s)
+2025-12-09 08:56:42,341 - INFO - Raw serial data received: STXRESETETX (Read time: 0.041s)
+2025-12-09 08:56:42,343 - INFO - Parsed STX/ETX format: 'STXRESETETX' → 'RESET'
+2025-12-09 08:56:42,344 - INFO - 🔄 RESET command received from serial
+2025-12-09 08:56:42,755 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:56:43,819 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:56:43,889 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:56:44,394 - INFO - ✅ Reset button clicked (Time: 2.047s)
+2025-12-09 08:57:18,198 - INFO - Raw serial data received: STXREABFIBFIASSETETX (Read time: 0.602s)
+2025-12-09 08:57:18,203 - INFO - Parsed STX/ETX format: 'STXREABFIBFIASSETETX' → 'REABFIBFIASSET'
+2025-12-09 08:57:18,206 - INFO - 🔄 Auto Reset enabled - Resetting before sending data
+2025-12-09 08:57:18,629 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:57:19,697 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:57:19,774 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:57:20,280 - INFO - ✅ Auto reset completed (Time: 2.070s)
+2025-12-09 08:57:20,783 - INFO - Attempting to input data: 'REABFIBFIASSET'
+2025-12-09 08:57:20,975 - INFO - set_text() successful: REABFIBFIASSET
+2025-12-09 08:57:21,504 - INFO - Data input successful to 'DEVICEID_AUTO': REABFIBFIASSET
+2025-12-09 08:57:22,600 - WARNING - lblError popup detected - sending NG
+2025-12-09 08:57:22,600 - WARNING - ⚠️ NG serial transmission successful (3 bytes)
+2025-12-09 08:57:22,604 - INFO - WinForms input completed (Input time: 4.399s)
+2025-12-09 08:57:35,268 - INFO - Raw serial data received: STXREABFIBFIASSETETX (Read time: 0.590s)
+2025-12-09 08:57:35,270 - INFO - Parsed STX/ETX format: 'STXREABFIBFIASSETETX' → 'REABFIBFIASSET'
+2025-12-09 08:57:35,271 - INFO - 🔄 Auto Reset enabled - Resetting before sending data
+2025-12-09 08:57:35,706 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:57:36,779 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:57:36,857 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:57:37,359 - INFO - ✅ Auto reset completed (Time: 2.086s)
+2025-12-09 08:57:37,863 - INFO - Attempting to input data: 'REABFIBFIASSET'
+2025-12-09 08:57:38,064 - INFO - set_text() successful: REABFIBFIASSET
+2025-12-09 08:57:38,587 - INFO - Data input successful to 'DEVICEID_AUTO': REABFIBFIASSET
+2025-12-09 08:57:39,671 - WARNING - lblError popup detected - sending NG
+2025-12-09 08:57:39,671 - WARNING - ⚠️ NG serial transmission successful (3 bytes)
+2025-12-09 08:57:39,672 - INFO - WinForms input completed (Input time: 4.401s)
+2025-12-09 08:57:58,230 - INFO - Raw serial data received: STXREABFIBFIASSETETX (Read time: 0.437s)
+2025-12-09 08:57:58,233 - INFO - Parsed STX/ETX format: 'STXREABFIBFIASSETETX' → 'REABFIBFIASSET'
+2025-12-09 08:57:58,236 - INFO - 🔄 Auto Reset enabled - Resetting before sending data
+2025-12-09 08:57:58,644 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 08:57:59,731 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 08:57:59,799 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 08:58:00,305 - INFO - ✅ Auto reset completed (Time: 2.065s)
+2025-12-09 08:58:00,809 - INFO - Attempting to input data: 'REABFIBFIASSET'
+2025-12-09 08:58:00,994 - INFO - set_text() successful: REABFIBFIASSET
+2025-12-09 08:58:01,508 - INFO - Data input successful to 'DEVICEID_AUTO': REABFIBFIASSET
+2025-12-09 08:58:02,592 - WARNING - lblError popup detected - sending NG
+2025-12-09 08:58:02,593 - WARNING - ⚠️ NG serial transmission successful (3 bytes)
+2025-12-09 08:58:02,593 - INFO - WinForms input completed (Input time: 4.358s)
+2025-12-09 09:00:28,382 - INFO - Raw serial data received: STXI42IDHL03HQM1JETX (Read time: 0.898s)
+2025-12-09 09:00:28,394 - INFO - Parsed STX/ETX format: 'STXI42IDHL03HQM1JETX' → 'I42IDHL03HQM1J'
+2025-12-09 09:00:28,396 - INFO - 🔄 Auto Reset enabled - Resetting before sending data
+2025-12-09 09:00:28,839 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 09:00:29,912 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 09:00:29,987 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 09:00:30,491 - INFO - ✅ Auto reset completed (Time: 2.086s)
+2025-12-09 09:00:30,996 - INFO - Attempting to input data: 'I42IDHL03HQM1J'
+2025-12-09 09:00:31,233 - INFO - set_text() successful: I42IDHL03HQM1J
+2025-12-09 09:00:31,794 - INFO - Data input successful to 'DEVICEID_AUTO': I42IDHL03HQM1J
+2025-12-09 09:00:33,713 - WARNING - NG popup detected (text='NG', size=706x290) - sending NG
+2025-12-09 09:00:33,714 - WARNING - ⚠️ NG serial transmission successful (3 bytes)
+2025-12-09 09:00:33,715 - INFO - WinForms input completed (Input time: 5.319s)
+2025-12-09 09:00:51,038 - INFO - Raw serial data received: STXI42IDHL03HQM1JETX (Read time: 0.218s)
+2025-12-09 09:00:51,046 - INFO - Parsed STX/ETX format: 'STXI42IDHL03HQM1JETX' → 'I42IDHL03HQM1J'
+2025-12-09 09:00:51,051 - INFO - 🔄 Auto Reset enabled - Resetting before sending data
+2025-12-09 09:00:51,472 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 09:00:52,552 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 09:00:52,626 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 09:00:53,129 - INFO - ✅ Auto reset completed (Time: 2.073s)
+2025-12-09 09:00:53,631 - INFO - Attempting to input data: 'I42IDHL03HQM1J'
+2025-12-09 09:00:53,872 - INFO - set_text() successful: I42IDHL03HQM1J
+2025-12-09 09:00:54,440 - INFO - Data input successful to 'DEVICEID_AUTO': I42IDHL03HQM1J
+2025-12-09 09:00:55,911 - WARNING - lblError popup detected - sending NG
+2025-12-09 09:00:55,912 - WARNING - ⚠️ NG serial transmission successful (3 bytes)
+2025-12-09 09:00:55,913 - INFO - WinForms input completed (Input time: 4.862s)
+2025-12-09 09:01:10,150 - INFO - Raw serial data received: STXI42IDHL03HQM1JETX (Read time: 0.148s)
+2025-12-09 09:01:10,160 - INFO - Parsed STX/ETX format: 'STXI42IDHL03HQM1JETX' → 'I42IDHL03HQM1J'
+2025-12-09 09:01:10,164 - INFO - 🔄 Auto Reset enabled - Resetting before sending data
+2025-12-09 09:01:10,583 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 09:01:11,665 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 09:01:11,748 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 09:01:12,433 - INFO - ✅ Auto reset completed (Time: 2.264s)
+2025-12-09 09:01:12,941 - INFO - Attempting to input data: 'I42IDHL03HQM1J'
+2025-12-09 09:01:13,193 - INFO - set_text() successful: I42IDHL03HQM1J
+2025-12-09 09:01:13,757 - INFO - Data input successful to 'DEVICEID_AUTO': I42IDHL03HQM1J
+2025-12-09 09:01:14,880 - WARNING - lblError popup detected - sending NG
+2025-12-09 09:01:14,881 - WARNING - ⚠️ NG serial transmission successful (3 bytes)
+2025-12-09 09:01:14,882 - INFO - WinForms input completed (Input time: 4.718s)
+2025-12-09 09:02:01,068 - INFO - Raw serial data received: STXI42IDHL03HQM1JETX (Read time: 0.881s)
+2025-12-09 09:02:01,071 - INFO - Parsed STX/ETX format: 'STXI42IDHL03HQM1JETX' → 'I42IDHL03HQM1J'
+2025-12-09 09:02:01,075 - INFO - 🔄 Auto Reset enabled - Resetting before sending data
+2025-12-09 09:02:01,493 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 09:02:02,565 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 09:02:02,639 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 09:02:03,142 - INFO - ✅ Auto reset completed (Time: 2.064s)
+2025-12-09 09:02:03,648 - INFO - Attempting to input data: 'I42IDHL03HQM1J'
+2025-12-09 09:02:03,875 - ERROR - set_text() method failed: , trying type_keys()...
+2025-12-09 09:02:04,312 - ERROR - type_keys() also failed: 
+2025-12-09 09:02:04,314 - INFO - WinForms input completed (Input time: 3.239s)
+2025-12-09 09:02:09,355 - INFO - Raw serial data received: STXI42IDHL03HQM1JETX (Read time: 0.001s)
+2025-12-09 09:02:09,358 - INFO - Parsed STX/ETX format: 'STXI42IDHL03HQM1JETX' → 'I42IDHL03HQM1J'
+2025-12-09 09:02:09,360 - INFO - 🔄 Auto Reset enabled - Resetting before sending data
+2025-12-09 09:02:09,774 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 09:02:10,861 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 09:02:10,954 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 09:02:11,665 - INFO - ✅ Auto reset completed (Time: 2.302s)
+2025-12-09 09:02:12,173 - INFO - Attempting to input data: 'I42IDHL03HQM1J'
+2025-12-09 09:02:12,445 - INFO - set_text() successful: I42IDHL03HQM1J
+2025-12-09 09:02:13,005 - INFO - Data input successful to 'DEVICEID_AUTO': I42IDHL03HQM1J
+2025-12-09 09:02:14,854 - INFO - No NG indicators found - sending OK
+2025-12-09 09:02:14,855 - INFO - ✅ OK serial transmission successful (3 bytes)
+2025-12-09 09:02:14,857 - INFO - WinForms input completed (Input time: 5.497s)
+2025-12-09 09:02:21,538 - INFO - Raw serial data received: STXI42IDHL03HQM1JETX (Read time: 0.651s)
+2025-12-09 09:02:21,541 - INFO - Parsed STX/ETX format: 'STXI42IDHL03HQM1JETX' → 'I42IDHL03HQM1J'
+2025-12-09 09:02:21,544 - INFO - 🔄 Auto Reset enabled - Resetting before sending data
+2025-12-09 09:02:21,969 - INFO - ⌨️ Pressing Alt+C...
+2025-12-09 09:02:23,058 - INFO - ⌨️ Pressing Alt+R...
+2025-12-09 09:02:23,147 - INFO - ✅ Reset completed successfully (Alt+C → Alt+R)
+2025-12-09 09:02:23,651 - INFO - ✅ Auto reset completed (Time: 2.105s)
+2025-12-09 09:02:24,158 - INFO - Attempting to input data: 'I42IDHL03HQM1J'
+2025-12-09 09:02:24,403 - INFO - set_text() successful: I42IDHL03HQM1J
+2025-12-09 09:02:24,946 - INFO - Data input successful to 'DEVICEID_AUTO': I42IDHL03HQM1J
+2025-12-09 09:02:26,461 - WARNING - lblError popup detected - sending NG
+2025-12-09 09:02:26,462 - WARNING - ⚠️ NG serial transmission successful (3 bytes)
+2025-12-09 09:02:26,462 - INFO - WinForms input completed (Input time: 4.919s)

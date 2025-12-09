@@ -18,7 +18,7 @@ log_filename = f"log/{datetime.date.today()}.txt"
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler(log_filename, encoding='utf-8'), logging.StreamHandler()])
 
 class SerialToWinForms:
-    def __init__(self):
+    def __init__(self, auto_reset=False):
         # Load config from JSON
         try:
             with open('config.json', 'r', encoding='utf-8') as f:
@@ -37,6 +37,7 @@ class SerialToWinForms:
         self.app = None
         self.window = None
         self.textbox = None
+        self.auto_reset = auto_reset  # Auto reset before sending data
 
     def list_available_ports(self):
         """List available serial ports"""
@@ -125,6 +126,15 @@ class SerialToWinForms:
             logging.error("Textbox not initialized")
             return
         try:
+            # Auto reset before sending data if enabled
+            if self.auto_reset:
+                logging.info("🔄 Auto Reset enabled - Resetting before sending data")
+                reset_start = time.time()
+                self.click_reset_button()
+                reset_time = time.time() - reset_start
+                logging.info(f"✅ Auto reset completed (Time: {reset_time:.3f}s)")
+                time.sleep(0.5)  # Wait a bit after reset
+            
             # Try method 1: set_text() + type_keys Enter
             try:
                 logging.info(f"Attempting to input data: '{data}'")

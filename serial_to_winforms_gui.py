@@ -74,6 +74,7 @@ class AppSettings:
         self.max_consecutive_errors = 10
         self.connection_grace_period = 5
         self.max_disconnect_tolerance = 20
+        self.auto_reset = False  # Auto reset before sending data to Shop-Flow
         
     def to_dict(self):
         return {
@@ -86,7 +87,8 @@ class AppSettings:
             'idle_timeout_minutes': self.idle_timeout_minutes,
             'max_consecutive_errors': self.max_consecutive_errors,
             'connection_grace_period': self.connection_grace_period,
-            'max_disconnect_tolerance': self.max_disconnect_tolerance
+            'max_disconnect_tolerance': self.max_disconnect_tolerance,
+            'auto_reset': self.auto_reset
         }
     
     def from_dict(self, data):
@@ -100,6 +102,7 @@ class AppSettings:
         self.max_consecutive_errors = data.get('max_consecutive_errors', self.max_consecutive_errors)
         self.connection_grace_period = data.get('connection_grace_period', self.connection_grace_period)
         self.max_disconnect_tolerance = data.get('max_disconnect_tolerance', self.max_disconnect_tolerance)
+        self.auto_reset = data.get('auto_reset', self.auto_reset)
 
 # Global settings instance
 app_settings = AppSettings()
@@ -452,8 +455,8 @@ class SerialToWinFormsGUI:
             except Exception as save_err:
                 self.log_message(f"Warning: Could not save config: {save_err}", "WARNING")
             
-            # Create handler instance
-            self.serial_handler = SerialToWinForms()
+            # Create handler instance with auto_reset setting
+            self.serial_handler = SerialToWinForms(auto_reset=app_settings.auto_reset)
             
             # Setup custom logging to GUI
             self.setup_gui_logging()
@@ -1189,6 +1192,55 @@ class SettingsDialog:
         
         inner.columnconfigure(0, weight=1)
         
+        # Auto Reset Section
+        auto_reset_section = tk.LabelFrame(scrollable_frame, text="  🔄 Auto Reset Settings  ", 
+                                font=('Arial', 10, 'bold'), bg="white", fg="#1e3a8a",
+                                relief=tk.GROOVE, borderwidth=2)
+        auto_reset_section.pack(fill=tk.X, padx=10, pady=(0, 15))
+        
+        auto_reset_inner = tk.Frame(auto_reset_section, bg="white", padx=15, pady=10)
+        auto_reset_inner.pack(fill=tk.BOTH)
+        
+        # Auto Reset checkbox
+        self.auto_reset_var = tk.BooleanVar(value=self.temp_settings.auto_reset)
+        
+        checkbox_frame = tk.Frame(auto_reset_inner, bg="white")
+        checkbox_frame.pack(fill=tk.X, pady=5)
+        
+        auto_reset_check = tk.Checkbutton(
+            checkbox_frame,
+            text="Enable Auto Reset before sending data",
+            variable=self.auto_reset_var,
+            font=('Arial', 10, 'bold'),
+            bg="white",
+            fg="#1f2937",
+            activebackground="white",
+            activeforeground="#1e3a8a",
+            selectcolor="white",
+            cursor="hand2"
+        )
+        auto_reset_check.pack(side=tk.LEFT)
+        
+        # Description
+        desc_frame = tk.Frame(auto_reset_inner, bg="#fef3c7", relief=tk.SOLID, borderwidth=1)
+        desc_frame.pack(fill=tk.X, pady=(10, 0))
+        
+        desc_inner = tk.Frame(desc_frame, bg="#fef3c7", padx=12, pady=10)
+        desc_inner.pack(fill=tk.BOTH)
+        
+        tk.Label(desc_inner, text="📌 How Auto Reset works:", 
+                font=('Arial', 9, 'bold'), bg="#fef3c7", fg="#92400e").pack(anchor=tk.W, pady=(0, 5))
+        
+        desc_texts = [
+            "✓ Enabled: Automatically click Reset button before sending each data to Shop-Flow",
+            "✗ Disabled: Send data directly without resetting (default behavior)",
+            "⚠️ This is independent from receiving 'RESET' command via serial port"
+        ]
+        
+        for text in desc_texts:
+            tk.Label(desc_inner, text=text, font=('Arial', 8), 
+                    bg="#fef3c7", fg="#78350f", justify=tk.LEFT).pack(anchor=tk.W, pady=2)
+        
         # Info box
         info_frame = tk.Frame(scrollable_frame, bg="#eff6ff", relief=tk.SOLID, borderwidth=1)
         info_frame.pack(fill=tk.X, padx=10, pady=15)
@@ -1323,6 +1375,7 @@ class SettingsDialog:
         app_settings.max_consecutive_errors = self.max_errors_var.get()
         app_settings.connection_grace_period = self.grace_period_var.get()
         app_settings.max_disconnect_tolerance = self.disconnect_tolerance_var.get()
+        app_settings.auto_reset = self.auto_reset_var.get()
         
         # Save to file
         if self.app.save_settings():
@@ -1332,6 +1385,11 @@ class SettingsDialog:
             self.app.max_consecutive_errors = app_settings.max_consecutive_errors
             self.app.connection_grace_period = app_settings.connection_grace_period
             self.app.max_disconnect_tolerance = app_settings.max_disconnect_tolerance
+            
+            # Update auto_reset in serial handler if it exists
+            if hasattr(self.app, 'serial_handler') and self.app.serial_handler:
+                self.app.serial_handler.auto_reset = app_settings.auto_reset
+                self.app.log_message(f"Auto Reset updated: {'Enabled' if app_settings.auto_reset else 'Disabled'}", "INFO")
             
             messagebox.showinfo("Success", "Settings saved successfully!\n\nNote: Some settings may require restarting the application to take full effect.")
             self.top.destroy()

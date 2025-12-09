@@ -8,5 +8,6 @@
     "idle_timeout_minutes": 30,
     "max_consecutive_errors": 10,
     "connection_grace_period": 5,
-    "max_disconnect_tolerance": 20
+    "max_disconnect_tolerance": 20,
+    "auto_reset": true
 }
