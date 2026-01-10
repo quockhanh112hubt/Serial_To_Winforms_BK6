@@ -46,6 +46,28 @@ class SerialToWinForms:
         logging.info(f"Available serial ports: {available_ports}")
         return available_ports
 
+    def _wait_for_window_ready(self, timeout=1.0, interval=0.05):
+        """Wait up to timeout seconds for the Shop-Flow window to be visible and enabled.
+        Returns True if ready, False otherwise."""
+        try:
+            end = time.time() + timeout
+            while time.time() < end:
+                try:
+                    if self.window.exists() and self.window.is_visible() and self.window.is_enabled():
+                        return True
+                except Exception:
+                    pass
+                time.sleep(interval)
+        except Exception:
+            pass
+        return False
+
+    def _sleep_poll(self, duration, interval=0.05):
+        """Sleep in small intervals to remain responsive and allow early wake by external events."""
+        end = time.time() + duration
+        while time.time() < end:
+            time.sleep(min(interval, end - time.time()))
+
     def connect_serial(self):
         try:
             # Check available ports first
@@ -133,27 +155,25 @@ class SerialToWinForms:
                 self.click_reset_button()
                 reset_time = time.time() - reset_start
                 logging.info(f"✅ Auto reset completed (Time: {reset_time:.3f}s)")
-                time.sleep(0.5)  # Wait a bit after reset
+                self._sleep_poll(0.15)  # short wait after reset
             
             # Try method 1: set_text() + type_keys Enter
             try:
                 logging.info(f"Attempting to input data: '{data}'")
                 self.window.set_focus()  # Focus window first
-                time.sleep(0.1)
+                self._sleep_poll(0.05)
                 
                 # Set text directly
                 self.textbox.set_text(data)
                 logging.info(f"set_text() successful: {data}")
-                time.sleep(0.2)
+                self._sleep_poll(0.05)
                 
                 # Press Enter
-                self.textbox.type_keys('{ENTER}', pause=0.1)
+                self.textbox.type_keys('{ENTER}', pause=0.05)
                 logging.info(f"Data input successful to '{self.textbox_auto_id}': {data}")
                 
-                # Wait for Shop-Flow to process data (increased wait time)
-                time.sleep(1.0)  # Increased from 0.5 to 1.0 seconds
-                
-                # Check lblError popup after input
+                # Wait briefly for Shop-Flow to process data; poll for NG/OK indicator
+                self._sleep_poll(0.25)
                 self.check_lbl_error_popup()
             except Exception as e1:
                 logging.error(f"set_text() method failed: {e1}, trying type_keys()...")
@@ -161,10 +181,10 @@ class SerialToWinForms:
                 try:
                     self.window.set_focus()
                     self.textbox.set_focus()
-                    time.sleep(0.1)
-                    self.textbox.type_keys(data + '{ENTER}', pause=0.1)
+                    self._sleep_poll(0.05)
+                    self.textbox.type_keys(data + '{ENTER}', pause=0.05)
                     logging.info(f"type_keys() successful: {data}")
-                    time.sleep(1.0)  # Increased wait time
+                    self._sleep_poll(0.25)
                     self.check_lbl_error_popup()
                 except Exception as e2:
                     logging.error(f"type_keys() also failed: {e2}")
@@ -204,22 +224,23 @@ class SerialToWinForms:
             if not self.window:
                 logging.error("❌ Shop-Flow window not initialized")
                 return False
-            
-            # Focus on the Shop-Flow window first
+            # Focus on the Shop-Flow window first and wait until ready
             self.window.set_focus()
-            time.sleep(0.5)
-            
+            self._wait_for_window_ready(timeout=1.0)
+
             # First shortcut: Alt+C
             logging.info("⌨️ Pressing Alt+C...")
             self.window.type_keys('%c')  # %c = Alt+C
-            time.sleep(1.0)  # Wait 1 second
-            
+            # small pause to allow UI to react; avoid long fixed sleeps
+            self._sleep_poll(0.25)
+
             # Second shortcut: Alt+R
             logging.info("⌨️ Pressing Alt+R...")
             self.window.type_keys('%r')  # %r = Alt+R
-            
+
             logging.info("✅ Reset completed successfully (Alt+C → Alt+R)")
-            time.sleep(0.5)
+            # short pause after reset
+            self._sleep_poll(0.15)
             return True
             
         except Exception as e:

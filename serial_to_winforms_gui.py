@@ -593,11 +593,20 @@ class SerialToWinFormsGUI:
                 
                 self.gui.root.after(0, lambda: self.gui.log_message(msg, tag))
         
-        # Add GUI handler to root logger
+        # Add GUI handler to root logger, but avoid adding duplicates
+        root_logger = logging.getLogger()
+        # If a GUIHandler for this GUI instance is already attached, skip
+        for h in list(root_logger.handlers):
+            try:
+                if isinstance(h, GUIHandler) and getattr(h, 'gui', None) is self:
+                    return
+            except Exception:
+                continue
+
         gui_handler = GUIHandler(self)
-        gui_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s', 
+        gui_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s',
                                                    datefmt='%H:%M:%S'))
-        logging.getLogger().addHandler(gui_handler)
+        root_logger.addHandler(gui_handler)
     
     def monitor_status(self):
         """Monitor connection status"""
@@ -1415,7 +1424,7 @@ def main():
 
 if __name__ == "__main__":
     try:
-        # check_for_updates()
+        check_for_updates()
         main()
     finally:
         release_mutex()
